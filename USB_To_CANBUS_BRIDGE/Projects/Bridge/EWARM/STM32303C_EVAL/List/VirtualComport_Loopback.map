@@ -1,0 +1,660 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.70.2.6274/W32 for ARM               23/Apr/2014  12:44:29 #
+# Copyright 2007-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  C:\Users\RAMI\Google Drive\ROV                           #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Exe\VirtualComport_Loopback.out                #
+#    Map file     =  C:\Users\RAMI\Google Drive\ROV                           #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\List\VirtualComport_Loopback.map               #
+#    Command line =  "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\BridgeCAN_Lib.o" "C:\Users\RAMI\Google     #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\BridgeCOM_Lib.o"                 #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\hw_config.o" "C:\Users\RAMI\Google         #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\main.o" "C:\Users\RAMI\Google    #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\mycomf3.o"                       #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\startup_stm32f30x.o"                       #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\stm32303c_eval.o" "C:\Users\RAMI\Google    #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\stm32_it.o"                      #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\stm32f30x_adc.o" "C:\Users\RAMI\Google     #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\stm32f30x_can.o"                 #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\stm32f30x_dma.o" "C:\Users\RAMI\Google     #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\stm32f30x_exti.o"                #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\stm32f30x_flash.o" "C:\Users\RAMI\Google   #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\stm32f30x_gpio.o"                #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\stm32f30x_misc.o" "C:\Users\RAMI\Google    #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\stm32f30x_pwr.o"                 #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\stm32f30x_rcc.o" "C:\Users\RAMI\Google     #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\stm32f30x_syscfg.o"              #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\stm32f30x_usart.o" "C:\Users\RAMI\Google   #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\system_stm32f30x.o"              #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\usb_core.o" "C:\Users\RAMI\Google          #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\usb_desc.o"                      #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\usb_endp.o" "C:\Users\RAMI\Google          #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\usb_init.o"                      #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\usb_int.o" "C:\Users\RAMI\Google           #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\usb_istr.o"                      #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\usb_mem.o" "C:\Users\RAMI\Google           #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\usb_prop.o"                      #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\usb_pwr.o" "C:\Users\RAMI\Google           #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Obj\usb_regs.o"                      #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\Obj\usb_sil.o" --redirect _Printf=_PrintfFull  #
+#                    --redirect _Scanf=_ScanfFull -o "C:\Users\RAMI\Google    #
+#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
+#                    WARM\STM32303C_EVAL\Exe\VirtualComport_Loopback.out"     #
+#                    --map "C:\Users\RAMI\Google Drive\ROV                    #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
+#                    303C_EVAL\List\VirtualComport_Loopback.map" --config     #
+#                    "C:\Users\RAMI\Google Drive\ROV                          #
+#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\stm32 #
+#                    f30x_flash.icf" --semihosting --entry                    #
+#                    __iar_program_start --redirect __write=__write_buffered  #
+#                    --redirect __iar_sh_stdout=__iar_sh_stdout_swo           #
+#                    "C:\Program Files (x86)\IAR Systems\Embedded Workbench   #
+#                    6.5\arm\CMSIS\Lib\IAR\iar_cortexM4lf_math.a" --vfe       #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0803ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20007fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                      0x188
+  .intvec            ro code  0x08000000   0x188  startup_stm32f30x.o [1]
+                            - 0x08000188   0x188
+
+"P1":                                     0x2884
+  .text              ro code  0x08000188   0x7ce  usb_core.o [1]
+  .text              ro code  0x08000956    0x2e  copy_init3.o [5]
+  .text              ro code  0x08000984   0x1d2  usb_regs.o [1]
+  .text              ro code  0x08000b56    0x48  usb_mem.o [1]
+  .text              ro code  0x08000b9e    0x22  zero_init3.o [5]
+  .text              ro code  0x08000bc0   0x564  hw_config.o [1]
+  .text              ro code  0x08001124    0x64  stm32f30x_rcc.o [1]
+  .text              ro code  0x08001188    0x9a  stm32f30x_gpio.o [1]
+  .text              ro code  0x08001224   0x108  stm32f30x_exti.o [1]
+  .text              ro code  0x0800132c    0xf8  system_stm32f30x.o [1]
+  .text              ro code  0x08001424    0x78  stm32f30x_misc.o [1]
+  .text              ro code  0x0800149c    0x36  strlen.o [5]
+  .text              ro code  0x080014d4    0xa4  stm32303c_eval.o [1]
+  .text              ro code  0x08001578   0x43c  stm32f30x_can.o [1]
+  .text              ro code  0x080019b4   0x216  stm32_it.o [1]
+  .text              ro code  0x08001bcc   0x1bc  BridgeCAN_Lib.o [1]
+  .text              ro code  0x08001d88    0xaa  BridgeCOM_Lib.o [1]
+  .text              ro code  0x08001e34   0x134  usb_istr.o [1]
+  .text              ro code  0x08001f68     0xc  memcpy.o [3]
+  .text              ro code  0x08001f74    0x76  ABImemcpy_unaligned.o [5]
+  .text              ro code  0x08001fec   0x140  usb_int.o [1]
+  .text              ro code  0x0800212c   0x184  usb_pwr.o [1]
+  .text              ro code  0x080022b0   0x204  usb_prop.o [1]
+  .text              ro code  0x080024b4    0x1c  usb_sil.o [1]
+  .text              ro code  0x080024d0   0x118  main.o [1]
+  .text              ro code  0x080025e8    0x20  usb_init.o [1]
+  .rodata            const    0x08002608    0xb8  usb_desc.o [1]
+  .text              ro code  0x080026c0    0x58  usb_endp.o [1]
+  .text              ro code  0x08002718    0x28  data_init.o [5]
+  .iar.init_table    const    0x08002740    0x24  - Linker created -
+  .text              ro code  0x08002764    0x1a  fpinit_M.o [4]
+  .text              ro code  0x08002780    0x1a  cmain.o [5]
+  .text              ro code  0x0800279a     0x4  low_level_init.o [3]
+  .text              ro code  0x0800279e     0x4  exit.o [3]
+  .text              ro code  0x080027a4     0xa  cexit.o [5]
+  .text              ro code  0x080027b0    0x14  exit.o [6]
+  .text              ro code  0x080027c4    0x10  startup_stm32f30x.o [1]
+  .text              ro code  0x080027d4     0xc  cstartup_M.o [5]
+  .text              ro code  0x080027e0     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080027e4     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080027e8     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080027ec     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080027f0     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080027f4     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080027f8     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080027fc     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002800     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002804     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002808     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x0800280c     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002810     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002814     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002818     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x0800281c     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002820     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002824     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002828     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x0800282c     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002830     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002834     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002838     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x0800283c     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002840     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002844     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002848     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x0800284c     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002850     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002854     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002858     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x0800285c     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002860     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002864     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002868     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x0800286c     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002870     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002874     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002878     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x0800287c     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002880     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002884     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002888     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x0800288c     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002890     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002894     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x08002898     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x0800289c     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028a0     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028a4     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028a8     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028ac     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028b0     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028b4     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028b8     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028bc     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028c0     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028c4     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028c8     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028cc     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028d0     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028d4     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028d8     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028dc     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028e0     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028e4     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080028e8     0x4  startup_stm32f30x.o [1]
+  .rodata            const    0x080028ec     0x0  zero_init3.o [5]
+  .rodata            const    0x080028ec     0x0  copy_init3.o [5]
+  Initializer bytes  ro data  0x080028ec   0x120  <for P2 s0>
+                            - 0x08002a0c  0x2884
+
+"P2", part 1 of 3:                         0x120
+  P2 s0                       0x20000000   0x120  <Init block>
+    .data            inited   0x20000000    0x30  usb_prop.o [1]
+    .data            inited   0x20000030    0x24  usb_prop.o [1]
+    .data            inited   0x20000054    0x20  stm32303c_eval.o [1]
+    .data            inited   0x20000074    0x20  usb_prop.o [1]
+    .data            inited   0x20000094    0x1c  usb_desc.o [1]
+    .data            inited   0x200000b0    0x1c  usb_istr.o [1]
+    .data            inited   0x200000cc    0x1c  usb_istr.o [1]
+    .data            inited   0x200000e8    0x14  system_stm32f30x.o [1]
+    .data            inited   0x200000fc     0x8  usb_prop.o [1]
+    .data            inited   0x20000104     0x8  usb_prop.o [1]
+    .data            inited   0x2000010c     0x8  usb_prop.o [1]
+    .data            inited   0x20000114     0x4  main.o [1]
+    .data            inited   0x20000118     0x4  usb_prop.o [1]
+    .data            inited   0x2000011c     0x1  usb_pwr.o [1]
+                            - 0x20000120   0x120
+
+"P2", part 2 of 3:                         0x100
+  .bss               zero     0x20000120    0x61  hw_config.o [1]
+  .bss               zero     0x20000182     0x2  usb_init.o [1]
+  .bss               zero     0x20000184    0x28  usb_init.o [1]
+  .bss               zero     0x200001ac    0x20  usb_pwr.o [1]
+  .bss               zero     0x200001cc    0x10  hw_config.o [1]
+  .bss               zero     0x200001dc     0xc  usb_istr.o [1]
+  .bss               zero     0x200001e8     0x8  hw_config.o [1]
+  .bss               zero     0x200001f0     0x8  main.o [1]
+  .bss               zero     0x200001f8     0x8  usb_pwr.o [1]
+  .bss               zero     0x20000200     0x4  BridgeCOM_Lib.o [1]
+  .bss               zero     0x20000204     0x4  stm32_it.o [1]
+  .bss               zero     0x20000208     0x4  usb_core.o [1]
+  .bss               zero     0x2000020c     0x4  usb_endp.o [1]
+  .bss               zero     0x20000210     0x4  usb_int.o [1]
+  .bss               zero     0x20000214     0x4  usb_pwr.o [1]
+  .bss               zero     0x20000218     0x1  usb_core.o [1]
+  .bss               zero     0x20000219     0x1  usb_init.o [1]
+  .bss               zero     0x2000021a     0x1  usb_prop.o [1]
+                            - 0x2000021b    0xfb
+
+"P2", part 3 of 3:                         0x400
+  CSTACK                      0x20000220   0x400  <Block>
+    CSTACK           uninit   0x20000220   0x400  <Block tail>
+                            - 0x20000620   0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xfb:
+          0x20000120   0xfb
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x120 (101% of destination):
+          0x080028ec  0x120
+    1 destination range, total size 0x11d:
+          0x20000000  0x11d
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+C:\Users\RAMI\Google Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32303C_EVAL\Obj: [1]
+    BridgeCAN_Lib.o            444
+    BridgeCOM_Lib.o            170                 4
+    hw_config.o              1 380               121
+    main.o                     280        4       12
+    startup_stm32f30x.o        676
+    stm32303c_eval.o           164       32       32
+    stm32_it.o                 534                 4
+    stm32f30x_can.o          1 084
+    stm32f30x_exti.o           264
+    stm32f30x_gpio.o           154
+    stm32f30x_misc.o           120
+    stm32f30x_rcc.o            100
+    system_stm32f30x.o         248       20       20
+    usb_core.o               1 998                 5
+    usb_desc.o                          212       28
+    usb_endp.o                  88                 4
+    usb_init.o                  32                43
+    usb_int.o                  320                 4
+    usb_istr.o                 308       56       68
+    usb_mem.o                   72
+    usb_prop.o                 516      144      145
+    usb_pwr.o                  388        1       45
+    usb_regs.o                 466
+    usb_sil.o                   28
+    ------------------------------------------------
+    Total:                   9 834      469      535
+
+command line: [2]
+    ------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                       4
+    low_level_init.o             4
+    memcpy.o                    12
+    ------------------------------------------------
+    Total:                      20
+
+m7M_tlv.a: [4]
+    fpinit_M.o                  26
+    ------------------------------------------------
+    Total:                      26
+
+rt7M_tl.a: [5]
+    ABImemcpy_unaligned.o      118
+    cexit.o                     10
+    cmain.o                     26
+    copy_init3.o                46
+    cstartup_M.o                12
+    data_init.o                 40
+    strlen.o                    54
+    zero_init3.o                34
+    ------------------------------------------------
+    Total:                     340
+
+shb_l.a: [6]
+    exit.o                      20
+    ------------------------------------------------
+    Total:                      20
+
+    Gaps                        16                 1
+    Linker created                       39    1 024
+----------------------------------------------------
+    Grand Total:            10 256      508    1 560
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x08002781         Code  Gb  cmain.o [5]
+ACK_MESSAGE             0x08000f20    0x2  Data  Lc  hw_config.o [1]
+AHBPrescTable           0x200000e8   0x10  Data  Gb  system_stm32f30x.o [1]
+Bridge                  0x20000120   0x60  Data  Gb  hw_config.o [1]
+Bridge_Init             0x08000d6d   0x2a  Code  Gb  hw_config.o [1]
+BusFault_Handler        0x080019b9    0x2  Code  Gb  stm32_it.o [1]
+ByteSwap                0x08000b4d    0xa  Code  Gb  usb_regs.o [1]
+CAN1_RX1_IRQHandler     0x08001b41   0x6c  Code  Gb  stm32_it.o [1]
+CANTX_Counter           0x20000206    0x2  Data  Gb  stm32_it.o [1]
+CAN_Config              0x08001bcd  0x120  Code  Gb  BridgeCAN_Lib.o [1]
+CAN_DeInit              0x08001579   0x1a  Code  Gb  stm32f30x_can.o [1]
+CAN_FilterInit          0x0800167d   0xaa  Code  Gb  stm32f30x_can.o [1]
+CAN_GetITStatus         0x080018ed   0xa4  Code  Gb  stm32f30x_can.o [1]
+CAN_GetLastErrorCode    0x080018d5    0x8  Code  Gb  stm32f30x_can.o [1]
+CAN_ITConfig            0x080018dd   0x10  Code  Gb  stm32f30x_can.o [1]
+CAN_Init                0x08001593   0xea  Code  Gb  stm32f30x_can.o [1]
+CAN_MessagePending      0x080018bf   0x16  Code  Gb  stm32f30x_can.o [1]
+CAN_Receive             0x08001843   0x7c  Code  Gb  stm32f30x_can.o [1]
+CAN_SaveMsg             0x08001ced   0x48  Code  Gb  BridgeCAN_Lib.o [1]
+CAN_SendMsg             0x08001d35   0x42  Code  Gb  BridgeCAN_Lib.o [1]
+CAN_StructInit          0x08001727   0x20  Code  Gb  stm32f30x_can.o [1]
+CAN_Transmit            0x08001747   0xb0  Code  Gb  stm32f30x_can.o [1]
+CAN_TransmitStatus      0x080017f7   0x4c  Code  Gb  stm32f30x_can.o [1]
+CAN_mbox                0x20000204    0x1  Data  Gb  stm32_it.o [1]
+CANpacket_receive       0x200001f4    0x4  Data  Gb  main.o [1]
+CANpacket_sent          0x200001f0    0x4  Data  Gb  main.o [1]
+CDC_Receive_DATA        0x08000db5   0xfe  Code  Gb  hw_config.o [1]
+CDC_Send_DATA           0x08000d23   0x2c  Code  Gb  hw_config.o [1]
+COM_CRC16               0x08001dff   0x34  Code  Gb  BridgeCOM_Lib.o [1]
+COM_SaveMsg             0x08001de5   0x1a  Code  Gb  BridgeCOM_Lib.o [1]
+COM_SendMsg             0x08001d89   0x56  Code  Gb  BridgeCOM_Lib.o [1]
+COM_SendSpecial         0x08000d97   0x1c  Code  Gb  hw_config.o [1]
+CRC_TABLE               0x08000f24  0x200  Data  Lc  hw_config.o [1]
+CSTACK$$Base            0x20000220          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000620          --   Gb  - Linker created -
+CTR_LP                  0x08001fed  0x128  Code  Gb  usb_int.o [1]
+ChangeState_level_Busier
+                        0x08000d55    0x6  Code  Gb  hw_config.o [1]
+ChangeState_level_Freer
+                        0x08000d4f    0x6  Code  Gb  hw_config.o [1]
+CheckITStatus           0x080019a9    0xc  Code  Lc  stm32f30x_can.o [1]
+ClearDTOG_RX            0x08000a45   0x24  Code  Gb  usb_regs.o [1]
+ClearDTOG_TX            0x08000a69   0x22  Code  Gb  usb_regs.o [1]
+Clear_Status_Out        0x08000a27   0x14  Code  Gb  usb_regs.o [1]
+Config_Descriptor       0x2000010c    0x8  Data  Gb  usb_prop.o [1]
+DataStageIn             0x0800043b   0xa4  Code  Lc  usb_core.o [1]
+Data_Mul_MaxPacketSize  0x20000218    0x1  Data  Gb  usb_core.o [1]
+Data_Setup0             0x080005ab  0x182  Code  Lc  usb_core.o [1]
+Device_Descriptor       0x20000104    0x8  Data  Gb  usb_prop.o [1]
+Device_Info             0x20000184   0x1c  Data  Gb  usb_init.o [1]
+Device_Property         0x20000000   0x30  Data  Gb  usb_prop.o [1]
+Device_Table            0x20000118    0x4  Data  Gb  usb_prop.o [1]
+EP                      0x200001ac   0x20  Data  Gb  usb_pwr.o [1]
+EP1_IN_Callback         0x080026c1    0x8  Code  Gb  usb_endp.o [1]
+EP3_OUT_Callback        0x080026c9   0x40  Code  Gb  usb_endp.o [1]
+EPindex                 0x20000219    0x1  Data  Gb  usb_init.o [1]
+EXTI_ClearITPendingBit  0x08001301    0x2  Code  Gb  stm32f30x_exti.o [1]
+EXTI_Init               0x08001225   0xdc  Code  Gb  stm32f30x_exti.o [1]
+EXTI_InitStructure      0x200001e8    0x8  Data  Gb  hw_config.o [1]
+GPIO_CLK                0x08001558   0x20  Data  Gb  stm32303c_eval.o [1]
+GPIO_Init               0x08001189   0x6e  Code  Gb  stm32f30x_gpio.o [1]
+GPIO_PIN                0x08001548   0x10  Data  Gb  stm32303c_eval.o [1]
+GPIO_PORT               0x20000054   0x20  Data  Gb  stm32303c_eval.o [1]
+GPIO_PinAFConfig        0x080011ff   0x24  Code  Gb  stm32f30x_gpio.o [1]
+GPIO_ResetBits          0x080011fb    0x4  Code  Gb  stm32f30x_gpio.o [1]
+GPIO_SetBits            0x080011f7    0x4  Code  Gb  stm32f30x_gpio.o [1]
+GetEPRxAddr             0x08000a9d    0xe  Code  Gb  usb_regs.o [1]
+GetEPRxCount            0x08000af1    0xe  Code  Gb  usb_regs.o [1]
+GetEPTxAddr             0x08000a9b    0x2  Code  Gb  usb_regs.o [1]
+Get_SerialNum           0x08000cd3   0x28  Code  Gb  hw_config.o [1]
+HardFault_Handler       0x080019b5    0x2  Code  Gb  stm32_it.o [1]
+In0_Process             0x0800079f   0x4a  Code  Gb  usb_core.o [1]
+IntToUnicode            0x08000cfb   0x28  Code  Lc  hw_config.o [1]
+LED_Init                0x08000ee5   0x36  Code  Gb  hw_config.o [1]
+Leave_LowPowerMode      0x08000c6f   0x14  Code  Gb  hw_config.o [1]
+MemManage_Handler       0x080019b7    0x2  Code  Gb  stm32_it.o [1]
+NACK_MESSAGE            0x08000f1c    0x2  Data  Lc  hw_config.o [1]
+NOP_Process             0x08000955    0x2  Code  Gb  usb_core.o [1]
+NVIC_Init               0x0800142f   0x58  Code  Gb  stm32f30x_misc.o [1]
+NVIC_PriorityGroupConfig
+                        0x08001425    0xa  Code  Gb  stm32f30x_misc.o [1]
+NoData_Setup0           0x080004df   0xcc  Code  Lc  usb_core.o [1]
+Out0_Process            0x080007e9   0xb0  Code  Gb  usb_core.o [1]
+PMAToUserBufferCopy     0x08000b81   0x1e  Code  Gb  usb_mem.o [1]
+Post0_Process           0x08000899   0x2c  Code  Gb  usb_core.o [1]
+PowerOn                 0x0800212d   0x22  Code  Gb  usb_pwr.o [1]
+RCC_AHBPeriphClockCmd   0x0800112b   0x12  Code  Gb  stm32f30x_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x0800114f   0x12  Code  Gb  stm32f30x_rcc.o [1]
+RCC_APB1PeriphResetCmd  0x08001161   0x12  Code  Gb  stm32f30x_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x0800113d   0x12  Code  Gb  stm32f30x_rcc.o [1]
+RCC_USBCLKConfig        0x08001125    0x6  Code  Gb  stm32f30x_rcc.o [1]
+Receive_Buffer          0x200001cc   0x10  Data  Gb  hw_config.o [1]
+Receive_Counter         0x20000180    0x1  Data  Gb  hw_config.o [1]
+Receive_length          0x2000020c    0x4  Data  Gb  usb_endp.o [1]
+Region$$Table$$Base     0x08002740          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08002764          --   Gb  - Linker created -
+Request                 0x2000021a    0x1  Data  Gb  usb_prop.o [1]
+Resume                  0x08002211   0x84  Code  Gb  usb_pwr.o [1]
+ResumeS                 0x200001f8    0x4  Data  Gb  usb_pwr.o [1]
+Resume_Init             0x080021f5   0x1a  Code  Gb  usb_pwr.o [1]
+STM_EVAL_LEDInit        0x080014d5   0x3c  Code  Gb  stm32303c_eval.o [1]
+STM_EVAL_LEDOff         0x08001511   0x12  Code  Gb  stm32303c_eval.o [1]
+STM_EVAL_LEDToggle      0x08001523   0x16  Code  Gb  stm32303c_eval.o [1]
+SaveRState              0x20000210    0x2  Data  Gb  usb_int.o [1]
+SaveTState              0x20000212    0x2  Data  Gb  usb_int.o [1]
+SetBTABLE               0x08000985    0xe  Code  Gb  usb_regs.o [1]
+SetDeviceAddress        0x080008db   0x36  Code  Gb  usb_core.o [1]
+SetEPRxAddr             0x08000a8d    0xe  Code  Gb  usb_regs.o [1]
+SetEPRxCount            0x08000ab9   0x38  Code  Gb  usb_regs.o [1]
+SetEPRxStatus           0x080009c9   0x20  Code  Gb  usb_regs.o [1]
+SetEPRxValid            0x08000a0f   0x18  Code  Gb  usb_regs.o [1]
+SetEPTxAddr             0x08000a8b    0x2  Code  Gb  usb_regs.o [1]
+SetEPTxCount            0x08000aab    0xe  Code  Gb  usb_regs.o [1]
+SetEPTxStatus           0x080009a7   0x22  Code  Gb  usb_regs.o [1]
+SetEPTxValid            0x080009f7   0x18  Code  Gb  usb_regs.o [1]
+SetEPType               0x08000993   0x14  Code  Gb  usb_regs.o [1]
+Set_System              0x08000bc1   0x98  Code  Gb  hw_config.o [1]
+Set_USBClock            0x08000c59   0x16  Code  Gb  hw_config.o [1]
+Setup0_Process          0x08000737   0x68  Code  Gb  usb_core.o [1]
+Standard_ClearFeature   0x080002d1   0xc2  Code  Gb  usb_core.o [1]
+Standard_GetConfiguration
+                        0x08000189   0x18  Code  Gb  usb_core.o [1]
+Standard_GetDescriptorData
+                        0x08000421   0x1a  Code  Gb  usb_core.o [1]
+Standard_GetInterface   0x080001d3   0x18  Code  Gb  usb_core.o [1]
+Standard_GetStatus      0x0800023b   0x8e  Code  Gb  usb_core.o [1]
+Standard_SetConfiguration
+                        0x080001a1   0x32  Code  Gb  usb_core.o [1]
+Standard_SetDeviceFeature
+                        0x08000405   0x1c  Code  Gb  usb_core.o [1]
+Standard_SetEndPointFeature
+                        0x08000393   0x72  Code  Gb  usb_core.o [1]
+Standard_SetInterface   0x080001f5   0x46  Code  Gb  usb_core.o [1]
+StatusInfo              0x20000208    0x4  Data  Gb  usb_core.o [1]
+String_Descriptor       0x20000074   0x20  Data  Gb  usb_prop.o [1]
+Suspend                 0x0800214f   0xa6  Code  Gb  usb_pwr.o [1]
+SysTick_Handler         0x080019bd  0x16c  Code  Gb  stm32_it.o [1]
+SystemCoreClock         0x200000f8    0x4  Data  Gb  system_stm32f30x.o [1]
+SystemInit              0x0800132d   0xda  Code  Gb  system_stm32f30x.o [1]
+USBWakeUp_IRQHandler    0x08001bc5    0x6  Code  Gb  stm32_it.o [1]
+USB_Cable_Config        0x08000cbf   0x14  Code  Gb  hw_config.o [1]
+USB_Init                0x080025e9   0x20  Code  Gb  usb_init.o [1]
+USB_Interrupts_Config   0x08000c83   0x3c  Code  Gb  hw_config.o [1]
+USB_Istr                0x08001e35  0x134  Code  Gb  usb_istr.o [1]
+USB_LP_CAN1_RX0_IRQHandler
+                        0x08001b3d    0x4  Code  Gb  stm32_it.o [1]
+USB_SIL_Init            0x080024b5   0x14  Code  Gb  usb_sil.o [1]
+UsageFault_Handler      0x080019bb    0x2  Code  Gb  stm32_it.o [1]
+UserToPMABufferCopy     0x08000b57   0x2a  Code  Gb  usb_mem.o [1]
+User_Standard_Requests  0x20000030   0x24  Data  Gb  usb_prop.o [1]
+Virtual_Com_Port_ConfigDescriptor
+                        0x0800261c   0x44  Data  Gb  usb_desc.o [1]
+Virtual_Com_Port_Data_Setup
+                        0x080023cb   0x56  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_DeviceDescriptor
+                        0x08002608   0x14  Data  Gb  usb_desc.o [1]
+Virtual_Com_Port_GetConfigDescriptor
+                        0x08002445    0x6  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_GetDeviceDescriptor
+                        0x0800243f    0x6  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_GetLineCoding
+                        0x08002471    0x6  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_GetStringDescriptor
+                        0x0800244b   0x18  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_Get_Interface_Setting
+                        0x08002463    0xe  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_NoData_Setup
+                        0x08002421   0x1e  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_Reset  0x080022cf   0xd6  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_SetConfiguration
+                        0x080023a5    0xe  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_SetDeviceAddress
+                        0x080023b3    0x8  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_SetLineCoding
+                        0x08002479    0x4  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_Status_In
+                        0x080023bb    0xe  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_Status_Out
+                        0x080023c9    0x2  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_StringLangID
+                        0x08002660    0x4  Data  Gb  usb_desc.o [1]
+Virtual_Com_Port_StringProduct
+                        0x0800268c   0x34  Data  Gb  usb_desc.o [1]
+Virtual_Com_Port_StringSerial
+                        0x20000094   0x1c  Data  Gb  usb_desc.o [1]
+Virtual_Com_Port_StringVendor
+                        0x08002664   0x28  Data  Gb  usb_desc.o [1]
+Virtual_Com_Port_init   0x080022b1   0x1e  Code  Gb  usb_prop.o [1]
+__cmain                 0x08002781         Code  Gb  cmain.o [5]
+__exit                  0x080027b1   0x14  Code  Gb  exit.o [6]
+__iar_copy_init3        0x08000957   0x2e  Code  Gb  copy_init3.o [5]
+__iar_data_init3        0x08002719   0x28  Code  Gb  data_init.o [5]
+__iar_init_vfp          0x08002765         Code  Gb  fpinit_M.o [4]
+__iar_program_start     0x080027d5         Code  Gb  cstartup_M.o [5]
+__iar_unaligned___aeabi_memcpy
+                        0x08001f75         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy4
+                        0x08001f95         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy8
+                        0x08001f95         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_zero_init3        0x08000b9f   0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0800279b    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32f30x.o [1]
+_call_main              0x0800278d         Code  Gb  cmain.o [5]
+_exit                   0x080027a5         Code  Gb  cexit.o [5]
+_main                   0x08002797         Code  Gb  cmain.o [5]
+bDeviceState            0x20000214    0x4  Data  Gb  usb_pwr.o [1]
+bIntPackSOF             0x200001dc    0x1  Data  Gb  usb_istr.o [1]
+crc16                   0x08000d5b   0x12  Code  Gb  hw_config.o [1]
+esof_counter            0x200001e0    0x4  Data  Gb  usb_istr.o [1]
+exit                    0x0800279f    0x4  Code  Gb  exit.o [3]
+fSuspendEnabled         0x2000011c    0x1  Data  Gb  usb_pwr.o [1]
+linecoding              0x200000fc    0x8  Data  Gb  usb_prop.o [1]
+main                    0x080024d1  0x118  Code  Gb  main.o [1]
+memcpy                  0x08001f69    0xc  Code  Gb  memcpy.o [3]
+mybyteconvertor         0x20000200    0x4  Data  Gb  BridgeCOM_Lib.o [1]
+pEpInt_IN               0x200000b0   0x1c  Data  Gb  usb_istr.o [1]
+pEpInt_OUT              0x200000cc   0x1c  Data  Gb  usb_istr.o [1]
+pInformation            0x200001a0    0x4  Data  Gb  usb_init.o [1]
+pProperty               0x200001a4    0x4  Data  Gb  usb_init.o [1]
+pUser_Standard_Requests
+                        0x200001a8    0x4  Data  Gb  usb_init.o [1]
+packet_sent             0x20000114    0x4  Data  Gb  main.o [1]
+remotewakeupon          0x200001fc    0x4  Data  Gb  usb_pwr.o [1]
+strlen                  0x0800149d         Code  Gb  strlen.o [5]
+wCNTR                   0x200001e4    0x4  Data  Gb  usb_istr.o [1]
+wInterrupt_Mask         0x20000182    0x2  Data  Gb  usb_init.o [1]
+wIstr                   0x200001de    0x2  Data  Gb  usb_istr.o [1]
+
+
+[1] = C:\Users\RAMI\Google Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32303C_EVAL\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tlv.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  10 256 bytes of readonly  code memory
+     508 bytes of readonly  data memory
+   1 560 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
