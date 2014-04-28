@@ -1,140 +1,104 @@
 ###############################################################################
 #                                                                             #
-# IAR ELF Linker V6.70.2.6274/W32 for ARM               23/Apr/2014  12:44:29 #
+# IAR ELF Linker V6.70.2.6274/W32 for ARM               24/Apr/2014  12:12:27 #
 # Copyright 2007-2013 IAR Systems AB.                                         #
 #                                                                             #
-#    Output file  =  C:\Users\RAMI\Google Drive\ROV                           #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Exe\VirtualComport_Loopback.out                #
-#    Map file     =  C:\Users\RAMI\Google Drive\ROV                           #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\List\VirtualComport_Loopback.map               #
-#    Command line =  "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\BridgeCAN_Lib.o" "C:\Users\RAMI\Google     #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\BridgeCOM_Lib.o"                 #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\hw_config.o" "C:\Users\RAMI\Google         #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\main.o" "C:\Users\RAMI\Google    #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\mycomf3.o"                       #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\startup_stm32f30x.o"                       #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\stm32303c_eval.o" "C:\Users\RAMI\Google    #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\stm32_it.o"                      #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\stm32f30x_adc.o" "C:\Users\RAMI\Google     #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\stm32f30x_can.o"                 #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\stm32f30x_dma.o" "C:\Users\RAMI\Google     #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\stm32f30x_exti.o"                #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\stm32f30x_flash.o" "C:\Users\RAMI\Google   #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\stm32f30x_gpio.o"                #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\stm32f30x_misc.o" "C:\Users\RAMI\Google    #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\stm32f30x_pwr.o"                 #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\stm32f30x_rcc.o" "C:\Users\RAMI\Google     #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\stm32f30x_syscfg.o"              #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\stm32f30x_usart.o" "C:\Users\RAMI\Google   #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\system_stm32f30x.o"              #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\usb_core.o" "C:\Users\RAMI\Google          #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\usb_desc.o"                      #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\usb_endp.o" "C:\Users\RAMI\Google          #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\usb_init.o"                      #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\usb_int.o" "C:\Users\RAMI\Google           #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\usb_istr.o"                      #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\usb_mem.o" "C:\Users\RAMI\Google           #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\usb_prop.o"                      #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\usb_pwr.o" "C:\Users\RAMI\Google           #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Obj\usb_regs.o"                      #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\Obj\usb_sil.o" --redirect _Printf=_PrintfFull  #
-#                    --redirect _Scanf=_ScanfFull -o "C:\Users\RAMI\Google    #
-#                    Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB #
-#                    -FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\E #
-#                    WARM\STM32303C_EVAL\Exe\VirtualComport_Loopback.out"     #
-#                    --map "C:\Users\RAMI\Google Drive\ROV                    #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32 #
-#                    303C_EVAL\List\VirtualComport_Loopback.map" --config     #
-#                    "C:\Users\RAMI\Google Drive\ROV                          #
-#                    workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device #
-#                    _Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\stm32 #
-#                    f30x_flash.icf" --semihosting --entry                    #
-#                    __iar_program_start --redirect __write=__write_buffered  #
-#                    --redirect __iar_sh_stdout=__iar_sh_stdout_swo           #
-#                    "C:\Program Files (x86)\IAR Systems\Embedded Workbench   #
+#    Output file  =  C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Exe\V #
+#                    irtualComport_Loopback.out                               #
+#    Map file     =  C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\List\ #
+#                    VirtualComport_Loopback.map                              #
+#    Command line =  C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj\B #
+#                    ridgeCAN_Lib.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN #
+#                    _Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32 #
+#                    303C_EVAL\Obj\BridgeCOM_Lib.o                            #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj\h #
+#                    w_config.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bri #
+#                    dge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C #
+#                    _EVAL\Obj\main.o C:\Users\RAMI\Documents\GitHub\USB_TO_C #
+#                    AN_Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM #
+#                    32303C_EVAL\Obj\mycomf3.o C:\Users\RAMI\Documents\GitHub #
+#                    \USB_TO_CAN_Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\ #
+#                    EWARM\STM32303C_EVAL\Obj\startup_stm32f30x.o             #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj\s #
+#                    tm32303c_eval.o C:\Users\RAMI\Documents\GitHub\USB_TO_CA #
+#                    N_Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM3 #
+#                    2303C_EVAL\Obj\stm32_it.o C:\Users\RAMI\Documents\GitHub #
+#                    \USB_TO_CAN_Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\ #
+#                    EWARM\STM32303C_EVAL\Obj\stm32f30x_adc.o                 #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj\s #
+#                    tm32f30x_can.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN #
+#                    _Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32 #
+#                    303C_EVAL\Obj\stm32f30x_dma.o                            #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj\s #
+#                    tm32f30x_exti.o C:\Users\RAMI\Documents\GitHub\USB_TO_CA #
+#                    N_Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM3 #
+#                    2303C_EVAL\Obj\stm32f30x_flash.o                         #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj\s #
+#                    tm32f30x_gpio.o C:\Users\RAMI\Documents\GitHub\USB_TO_CA #
+#                    N_Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM3 #
+#                    2303C_EVAL\Obj\stm32f30x_misc.o                          #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj\s #
+#                    tm32f30x_pwr.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN #
+#                    _Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32 #
+#                    303C_EVAL\Obj\stm32f30x_rcc.o                            #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj\s #
+#                    tm32f30x_syscfg.o C:\Users\RAMI\Documents\GitHub\USB_TO_ #
+#                    CAN_Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\ST #
+#                    M32303C_EVAL\Obj\stm32f30x_tim.o                         #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj\s #
+#                    tm32f30x_usart.o C:\Users\RAMI\Documents\GitHub\USB_TO_C #
+#                    AN_Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM #
+#                    32303C_EVAL\Obj\system_stm32f30x.o                       #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj\u #
+#                    sb_core.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Brid #
+#                    ge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_ #
+#                    EVAL\Obj\usb_desc.o C:\Users\RAMI\Documents\GitHub\USB_T #
+#                    O_CAN_Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\ #
+#                    STM32303C_EVAL\Obj\usb_endp.o                            #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj\u #
+#                    sb_init.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Brid #
+#                    ge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_ #
+#                    EVAL\Obj\usb_int.o C:\Users\RAMI\Documents\GitHub\USB_TO #
+#                    _CAN_Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\S #
+#                    TM32303C_EVAL\Obj\usb_istr.o                             #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj\u #
+#                    sb_mem.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridg #
+#                    e\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_E #
+#                    VAL\Obj\usb_prop.o C:\Users\RAMI\Documents\GitHub\USB_TO #
+#                    _CAN_Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\S #
+#                    TM32303C_EVAL\Obj\usb_pwr.o                              #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj\u #
+#                    sb_regs.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Brid #
+#                    ge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_ #
+#                    EVAL\Obj\usb_sil.o --redirect _Printf=_PrintfFull        #
+#                    --redirect _Scanf=_ScanfFull -o                          #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Exe\V #
+#                    irtualComport_Loopback.out --map                         #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\List\ #
+#                    VirtualComport_Loopback.map --config                     #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_ #
+#                    CANBUS_BRIDGE\Projects\Bridge\EWARM\stm32f30x_flash.icf  #
+#                    --semihosting --entry __iar_program_start --redirect     #
+#                    __write=__write_buffered --redirect                      #
+#                    __iar_sh_stdout=__iar_sh_stdout_swo "C:\Program Files    #
+#                    (x86)\IAR Systems\Embedded Workbench                     #
 #                    6.5\arm\CMSIS\Lib\IAR\iar_cortexM4lf_math.a" --vfe       #
 #                                                                             #
 #                                                                             #
@@ -162,7 +126,7 @@ __SystemLibrary = DLib
   .intvec            ro code  0x08000000   0x188  startup_stm32f30x.o [1]
                             - 0x08000188   0x188
 
-"P1":                                     0x2884
+"P1":                                     0x2878
   .text              ro code  0x08000188   0x7ce  usb_core.o [1]
   .text              ro code  0x08000956    0x2e  copy_init3.o [5]
   .text              ro code  0x08000984   0x1d2  usb_regs.o [1]
@@ -187,20 +151,23 @@ __SystemLibrary = DLib
   .text              ro code  0x0800212c   0x184  usb_pwr.o [1]
   .text              ro code  0x080022b0   0x204  usb_prop.o [1]
   .text              ro code  0x080024b4    0x1c  usb_sil.o [1]
-  .text              ro code  0x080024d0   0x118  main.o [1]
-  .text              ro code  0x080025e8    0x20  usb_init.o [1]
-  .rodata            const    0x08002608    0xb8  usb_desc.o [1]
-  .text              ro code  0x080026c0    0x58  usb_endp.o [1]
-  .text              ro code  0x08002718    0x28  data_init.o [5]
-  .iar.init_table    const    0x08002740    0x24  - Linker created -
-  .text              ro code  0x08002764    0x1a  fpinit_M.o [4]
-  .text              ro code  0x08002780    0x1a  cmain.o [5]
-  .text              ro code  0x0800279a     0x4  low_level_init.o [3]
-  .text              ro code  0x0800279e     0x4  exit.o [3]
-  .text              ro code  0x080027a4     0xa  cexit.o [5]
-  .text              ro code  0x080027b0    0x14  exit.o [6]
-  .text              ro code  0x080027c4    0x10  startup_stm32f30x.o [1]
-  .text              ro code  0x080027d4     0xc  cstartup_M.o [5]
+  .text              ro code  0x080024d0   0x10c  main.o [1]
+  .text              ro code  0x080025dc    0x20  usb_init.o [1]
+  .rodata            const    0x080025fc    0xb8  usb_desc.o [1]
+  .text              ro code  0x080026b4    0x58  usb_endp.o [1]
+  .text              ro code  0x0800270c    0x28  data_init.o [5]
+  .iar.init_table    const    0x08002734    0x24  - Linker created -
+  .text              ro code  0x08002758    0x1a  fpinit_M.o [4]
+  .text              ro code  0x08002774    0x1a  cmain.o [5]
+  .text              ro code  0x0800278e     0x4  low_level_init.o [3]
+  .text              ro code  0x08002792     0x4  exit.o [3]
+  .text              ro code  0x08002798     0xa  cexit.o [5]
+  .text              ro code  0x080027a4    0x14  exit.o [6]
+  .text              ro code  0x080027b8    0x10  startup_stm32f30x.o [1]
+  .text              ro code  0x080027c8     0xc  cstartup_M.o [5]
+  .text              ro code  0x080027d4     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080027d8     0x4  startup_stm32f30x.o [1]
+  .text              ro code  0x080027dc     0x4  startup_stm32f30x.o [1]
   .text              ro code  0x080027e0     0x4  startup_stm32f30x.o [1]
   .text              ro code  0x080027e4     0x4  startup_stm32f30x.o [1]
   .text              ro code  0x080027e8     0x4  startup_stm32f30x.o [1]
@@ -265,13 +232,10 @@ __SystemLibrary = DLib
   .text              ro code  0x080028d4     0x4  startup_stm32f30x.o [1]
   .text              ro code  0x080028d8     0x4  startup_stm32f30x.o [1]
   .text              ro code  0x080028dc     0x4  startup_stm32f30x.o [1]
-  .text              ro code  0x080028e0     0x4  startup_stm32f30x.o [1]
-  .text              ro code  0x080028e4     0x4  startup_stm32f30x.o [1]
-  .text              ro code  0x080028e8     0x4  startup_stm32f30x.o [1]
-  .rodata            const    0x080028ec     0x0  zero_init3.o [5]
-  .rodata            const    0x080028ec     0x0  copy_init3.o [5]
-  Initializer bytes  ro data  0x080028ec   0x120  <for P2 s0>
-                            - 0x08002a0c  0x2884
+  .rodata            const    0x080028e0     0x0  zero_init3.o [5]
+  .rodata            const    0x080028e0     0x0  copy_init3.o [5]
+  Initializer bytes  ro data  0x080028e0   0x120  <for P2 s0>
+                            - 0x08002a00  0x2878
 
 "P2", part 1 of 3:                         0x120
   P2 s0                       0x20000000   0x120  <Init block>
@@ -330,7 +294,7 @@ Zero (__iar_zero_init3)
 
 Copy (__iar_copy_init3)
     1 source range, total size 0x120 (101% of destination):
-          0x080028ec  0x120
+          0x080028e0  0x120
     1 destination range, total size 0x11d:
           0x20000000  0x11d
 
@@ -342,11 +306,11 @@ Copy (__iar_copy_init3)
 
     Module                 ro code  ro data  rw data
     ------                 -------  -------  -------
-C:\Users\RAMI\Google Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32303C_EVAL\Obj: [1]
+C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj: [1]
     BridgeCAN_Lib.o            444
     BridgeCOM_Lib.o            170                 4
     hw_config.o              1 380               121
-    main.o                     280        4       12
+    main.o                     268        4       12
     startup_stm32f30x.o        676
     stm32303c_eval.o           164       32       32
     stm32_it.o                 534                 4
@@ -368,7 +332,7 @@ C:\Users\RAMI\Google Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS
     usb_regs.o                 466
     usb_sil.o                   28
     ------------------------------------------------
-    Total:                   9 834      469      535
+    Total:                   9 822      469      535
 
 command line: [2]
     ------------------------------------------------
@@ -406,7 +370,7 @@ shb_l.a: [6]
     Gaps                        16                 1
     Linker created                       39    1 024
 ----------------------------------------------------
-    Grand Total:            10 256      508    1 560
+    Grand Total:            10 244      508    1 560
 
 
 *******************************************************************************
@@ -415,7 +379,7 @@ shb_l.a: [6]
 
 Entry                      Address   Size  Type      Object
 -----                      -------   ----  ----      ------
-?main                   0x08002781         Code  Gb  cmain.o [5]
+?main                   0x08002775         Code  Gb  cmain.o [5]
 ACK_MESSAGE             0x08000f20    0x2  Data  Lc  hw_config.o [1]
 AHBPrescTable           0x200000e8   0x10  Data  Gb  system_stm32f30x.o [1]
 Bridge                  0x20000120   0x60  Data  Gb  hw_config.o [1]
@@ -468,8 +432,8 @@ Device_Info             0x20000184   0x1c  Data  Gb  usb_init.o [1]
 Device_Property         0x20000000   0x30  Data  Gb  usb_prop.o [1]
 Device_Table            0x20000118    0x4  Data  Gb  usb_prop.o [1]
 EP                      0x200001ac   0x20  Data  Gb  usb_pwr.o [1]
-EP1_IN_Callback         0x080026c1    0x8  Code  Gb  usb_endp.o [1]
-EP3_OUT_Callback        0x080026c9   0x40  Code  Gb  usb_endp.o [1]
+EP1_IN_Callback         0x080026b5    0x8  Code  Gb  usb_endp.o [1]
+EP3_OUT_Callback        0x080026bd   0x40  Code  Gb  usb_endp.o [1]
 EPindex                 0x20000219    0x1  Data  Gb  usb_init.o [1]
 EXTI_ClearITPendingBit  0x08001301    0x2  Code  Gb  stm32f30x_exti.o [1]
 EXTI_Init               0x08001225   0xdc  Code  Gb  stm32f30x_exti.o [1]
@@ -509,8 +473,8 @@ RCC_USBCLKConfig        0x08001125    0x6  Code  Gb  stm32f30x_rcc.o [1]
 Receive_Buffer          0x200001cc   0x10  Data  Gb  hw_config.o [1]
 Receive_Counter         0x20000180    0x1  Data  Gb  hw_config.o [1]
 Receive_length          0x2000020c    0x4  Data  Gb  usb_endp.o [1]
-Region$$Table$$Base     0x08002740          --   Gb  - Linker created -
-Region$$Table$$Limit    0x08002764          --   Gb  - Linker created -
+Region$$Table$$Base     0x08002734          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08002758          --   Gb  - Linker created -
 Request                 0x2000021a    0x1  Data  Gb  usb_prop.o [1]
 Resume                  0x08002211   0x84  Code  Gb  usb_pwr.o [1]
 ResumeS                 0x200001f8    0x4  Data  Gb  usb_pwr.o [1]
@@ -556,7 +520,7 @@ SystemCoreClock         0x200000f8    0x4  Data  Gb  system_stm32f30x.o [1]
 SystemInit              0x0800132d   0xda  Code  Gb  system_stm32f30x.o [1]
 USBWakeUp_IRQHandler    0x08001bc5    0x6  Code  Gb  stm32_it.o [1]
 USB_Cable_Config        0x08000cbf   0x14  Code  Gb  hw_config.o [1]
-USB_Init                0x080025e9   0x20  Code  Gb  usb_init.o [1]
+USB_Init                0x080025dd   0x20  Code  Gb  usb_init.o [1]
 USB_Interrupts_Config   0x08000c83   0x3c  Code  Gb  hw_config.o [1]
 USB_Istr                0x08001e35  0x134  Code  Gb  usb_istr.o [1]
 USB_LP_CAN1_RX0_IRQHandler
@@ -566,11 +530,11 @@ UsageFault_Handler      0x080019bb    0x2  Code  Gb  stm32_it.o [1]
 UserToPMABufferCopy     0x08000b57   0x2a  Code  Gb  usb_mem.o [1]
 User_Standard_Requests  0x20000030   0x24  Data  Gb  usb_prop.o [1]
 Virtual_Com_Port_ConfigDescriptor
-                        0x0800261c   0x44  Data  Gb  usb_desc.o [1]
+                        0x08002610   0x44  Data  Gb  usb_desc.o [1]
 Virtual_Com_Port_Data_Setup
                         0x080023cb   0x56  Code  Gb  usb_prop.o [1]
 Virtual_Com_Port_DeviceDescriptor
-                        0x08002608   0x14  Data  Gb  usb_desc.o [1]
+                        0x080025fc   0x14  Data  Gb  usb_desc.o [1]
 Virtual_Com_Port_GetConfigDescriptor
                         0x08002445    0x6  Code  Gb  usb_prop.o [1]
 Virtual_Com_Port_GetDeviceDescriptor
@@ -595,20 +559,20 @@ Virtual_Com_Port_Status_In
 Virtual_Com_Port_Status_Out
                         0x080023c9    0x2  Code  Gb  usb_prop.o [1]
 Virtual_Com_Port_StringLangID
-                        0x08002660    0x4  Data  Gb  usb_desc.o [1]
+                        0x08002654    0x4  Data  Gb  usb_desc.o [1]
 Virtual_Com_Port_StringProduct
-                        0x0800268c   0x34  Data  Gb  usb_desc.o [1]
+                        0x08002680   0x34  Data  Gb  usb_desc.o [1]
 Virtual_Com_Port_StringSerial
                         0x20000094   0x1c  Data  Gb  usb_desc.o [1]
 Virtual_Com_Port_StringVendor
-                        0x08002664   0x28  Data  Gb  usb_desc.o [1]
+                        0x08002658   0x28  Data  Gb  usb_desc.o [1]
 Virtual_Com_Port_init   0x080022b1   0x1e  Code  Gb  usb_prop.o [1]
-__cmain                 0x08002781         Code  Gb  cmain.o [5]
-__exit                  0x080027b1   0x14  Code  Gb  exit.o [6]
+__cmain                 0x08002775         Code  Gb  cmain.o [5]
+__exit                  0x080027a5   0x14  Code  Gb  exit.o [6]
 __iar_copy_init3        0x08000957   0x2e  Code  Gb  copy_init3.o [5]
-__iar_data_init3        0x08002719   0x28  Code  Gb  data_init.o [5]
-__iar_init_vfp          0x08002765         Code  Gb  fpinit_M.o [4]
-__iar_program_start     0x080027d5         Code  Gb  cstartup_M.o [5]
+__iar_data_init3        0x0800270d   0x28  Code  Gb  data_init.o [5]
+__iar_init_vfp          0x08002759         Code  Gb  fpinit_M.o [4]
+__iar_program_start     0x080027c9         Code  Gb  cstartup_M.o [5]
 __iar_unaligned___aeabi_memcpy
                         0x08001f75         Code  Gb  ABImemcpy_unaligned.o [5]
 __iar_unaligned___aeabi_memcpy4
@@ -616,19 +580,19 @@ __iar_unaligned___aeabi_memcpy4
 __iar_unaligned___aeabi_memcpy8
                         0x08001f95         Code  Gb  ABImemcpy_unaligned.o [5]
 __iar_zero_init3        0x08000b9f   0x22  Code  Gb  zero_init3.o [5]
-__low_level_init        0x0800279b    0x4  Code  Gb  low_level_init.o [3]
+__low_level_init        0x0800278f    0x4  Code  Gb  low_level_init.o [3]
 __vector_table          0x08000000         Data  Gb  startup_stm32f30x.o [1]
-_call_main              0x0800278d         Code  Gb  cmain.o [5]
-_exit                   0x080027a5         Code  Gb  cexit.o [5]
-_main                   0x08002797         Code  Gb  cmain.o [5]
+_call_main              0x08002781         Code  Gb  cmain.o [5]
+_exit                   0x08002799         Code  Gb  cexit.o [5]
+_main                   0x0800278b         Code  Gb  cmain.o [5]
 bDeviceState            0x20000214    0x4  Data  Gb  usb_pwr.o [1]
 bIntPackSOF             0x200001dc    0x1  Data  Gb  usb_istr.o [1]
 crc16                   0x08000d5b   0x12  Code  Gb  hw_config.o [1]
 esof_counter            0x200001e0    0x4  Data  Gb  usb_istr.o [1]
-exit                    0x0800279f    0x4  Code  Gb  exit.o [3]
+exit                    0x08002793    0x4  Code  Gb  exit.o [3]
 fSuspendEnabled         0x2000011c    0x1  Data  Gb  usb_pwr.o [1]
 linecoding              0x200000fc    0x8  Data  Gb  usb_prop.o [1]
-main                    0x080024d1  0x118  Code  Gb  main.o [1]
+main                    0x080024d1  0x10c  Code  Gb  main.o [1]
 memcpy                  0x08001f69    0xc  Code  Gb  memcpy.o [3]
 mybyteconvertor         0x20000200    0x4  Data  Gb  BridgeCOM_Lib.o [1]
 pEpInt_IN               0x200000b0   0x1c  Data  Gb  usb_istr.o [1]
@@ -645,14 +609,14 @@ wInterrupt_Mask         0x20000182    0x2  Data  Gb  usb_init.o [1]
 wIstr                   0x200001de    0x2  Data  Gb  usb_istr.o [1]
 
 
-[1] = C:\Users\RAMI\Google Drive\ROV workspace\Passerelle_PCtoROV_stm32f3\STM32_USB-FS-Device_Lib_V4.0.0\Projects\VirtualComport_Loopback\EWARM\STM32303C_EVAL\Obj
+[1] = C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\USB_To_CANBUS_BRIDGE\Projects\Bridge\EWARM\STM32303C_EVAL\Obj
 [2] = command line
 [3] = dl7M_tln.a
 [4] = m7M_tlv.a
 [5] = rt7M_tl.a
 [6] = shb_l.a
 
-  10 256 bytes of readonly  code memory
+  10 244 bytes of readonly  code memory
      508 bytes of readonly  data memory
    1 560 bytes of readwrite data memory
 

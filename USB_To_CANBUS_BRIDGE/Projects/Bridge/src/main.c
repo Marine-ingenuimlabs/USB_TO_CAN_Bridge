@@ -45,7 +45,7 @@ uint16_t crcvalue_test=0xFFFF;
   uint32_t packet_receive=1;
   extern COM_struct Bridge;
 
-  
+ 
   /*********CAN variables********/
   uint32_t CANpacket_sent;
   uint32_t CANpacket_receive; 
@@ -99,6 +99,10 @@ uint16_t crcvalue_test=0xFFFF;
     while(1);
   }
   
+  
+  
+  
+  
   /*Varible initialization*/
   Bridge_Init(&Bridge);
   //uint8_t k=0;
@@ -113,7 +117,6 @@ uint16_t crcvalue_test=0xFFFF;
     for (k=0;k<11;k++){
       CDC_Receive_DATA(crc_test[k]);
       crcvalue_test=crc16(crcvalue_test,crc_test[k]); } //for crc computation*/
-   CAN_Transmit(CAN1,&Bridge.TxMessage1);
     while(bDeviceState==CONFIGURED) 
       { 
         STM_EVAL_LEDToggle(LED7);/* 128 synchronization without getting an acknowledgement*/

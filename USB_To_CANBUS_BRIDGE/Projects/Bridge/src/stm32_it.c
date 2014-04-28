@@ -49,6 +49,7 @@
  extern   uint32_t CANpacket_receive; 
  uint16_t CANTX_Counter=0;
  uint8_t CAN_mbox;
+
 /******************************************************************************/
 /*                 STM32F30x Peripherals Interrupt Handlers                   */
 /******************************************************************************/

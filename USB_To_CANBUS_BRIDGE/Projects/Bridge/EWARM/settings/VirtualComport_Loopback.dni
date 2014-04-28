@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-1885035902
+Checksum=-516740910
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -70,6 +70,16 @@ GraphEnabled=0
 ShowTimeLog=1
 ShowTimeSum=1
 SumSortOrder=0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\src\stm32_it.c}.284.15" 0 0 1 "" 0 "" 0
+Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\..\..\..\..\..\..\Windows\system32}.119.9" 0 0 1 "" 0 "" 0
+Bp2=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\src\stm32_it.c}.275.9" 0 0 1 "" 0 "" 0
+Bp3=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\src}.299.3" 0 0 1 "" 0 "" 0
+Bp4=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\src}.302.17" 0 0 1 "" 0 "" 0
+Bp5=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\src\stm32_it.c}.141.28" 0 0 1 "" 0 "" 0
+Count=6
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -77,6 +87,9 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
+[Aliases]
+Count=0
+SuppressDialog=0
 [CallStackLog]
 Enabled=0
 [DriverProfiling]
@@ -85,15 +98,3 @@ Mode=3
 Graph=0
 Symbiont=0
 Exclusions=
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\src\stm32_it.c}.261.7" 0 0 1 "" 0 "" 0
-Bp1=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\src\BridgeCAN_Lib.c}.119.9" 0 0 1 "" 0 "" 0
-Bp2=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\src\stm32_it.c}.257.3" 0 0 1 "" 0 "" 0
-Bp3=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\Libraries\STM32F30x_StdPeriph_Driver\src\stm32f30x_can.c}.299.3" 0 0 1 "" 0 "" 0
-Bp4=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\src\system_stm32f30x.c}.302.17" 0 0 1 "" 0 "" 0
-Count=5
-[Aliases]
-Count=0
-SuppressDialog=0

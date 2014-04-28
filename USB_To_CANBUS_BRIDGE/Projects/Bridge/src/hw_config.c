@@ -33,6 +33,7 @@
 #include "usb_desc.h"
 #include "hw_config.h"
 #include "usb_pwr.h"
+#include "stm32f30x_tim.h"
 
 /* Private typedef -----------------------------------------------------------*/
 
