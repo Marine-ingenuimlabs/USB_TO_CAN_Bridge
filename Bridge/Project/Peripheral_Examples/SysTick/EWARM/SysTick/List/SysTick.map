@@ -1,76 +1,80 @@
 ###############################################################################
 #                                                                             #
-# IAR ELF Linker V6.70.2.6274/W32 for ARM               28/Apr/2014  12:49:51 #
+# IAR ELF Linker V6.70.2.6274/W32 for ARM               29/Apr/2014  14:09:07 #
 # Copyright 2007-2013 IAR Systems AB.                                         #
 #                                                                             #
-#    Output file  =  C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1.0\Projec #
-#                    t\Peripheral_Examples\SysTick\EWARM\SysTick\Exe\SysTick. #
-#                    out                                                      #
-#    Map file     =  C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1.0\Projec #
-#                    t\Peripheral_Examples\SysTick\EWARM\SysTick\List\SysTick #
-#                    .map                                                     #
-#    Command line =  C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1.0\Projec #
-#                    t\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\BRIDGE_C #
-#                    onfig.o C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1. #
-#                    0\Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\ #
-#                    BridgeCAN_Lib.o C:\Users\RAMI\Desktop\STM32F4-Discovery_ #
-#                    FW_V1.1.0\Project\Peripheral_Examples\SysTick\EWARM\SysT #
-#                    ick\Obj\BridgeCOM_Lib.o C:\Users\RAMI\Desktop\STM32F4-Di #
-#                    scovery_FW_V1.1.0\Project\Peripheral_Examples\SysTick\EW #
-#                    ARM\SysTick\Obj\main.o C:\Users\RAMI\Desktop\STM32F4-Dis #
-#                    covery_FW_V1.1.0\Project\Peripheral_Examples\SysTick\EWA #
-#                    RM\SysTick\Obj\misc.o C:\Users\RAMI\Desktop\STM32F4-Disc #
-#                    overy_FW_V1.1.0\Project\Peripheral_Examples\SysTick\EWAR #
-#                    M\SysTick\Obj\startup_stm32f4xx.o                        #
-#                    C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1.0\Projec #
-#                    t\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\stm32f4x #
-#                    x_can.o C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1. #
-#                    0\Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\ #
-#                    stm32f4xx_exti.o C:\Users\RAMI\Desktop\STM32F4-Discovery #
-#                    _FW_V1.1.0\Project\Peripheral_Examples\SysTick\EWARM\Sys #
-#                    Tick\Obj\stm32f4xx_gpio.o C:\Users\RAMI\Desktop\STM32F4- #
-#                    Discovery_FW_V1.1.0\Project\Peripheral_Examples\SysTick\ #
-#                    EWARM\SysTick\Obj\stm32f4xx_it.o                         #
-#                    C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1.0\Projec #
-#                    t\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\stm32f4x #
-#                    x_rcc.o C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1. #
-#                    0\Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\ #
-#                    stm32f4xx_usart.o C:\Users\RAMI\Desktop\STM32F4-Discover #
-#                    y_FW_V1.1.0\Project\Peripheral_Examples\SysTick\EWARM\Sy #
-#                    sTick\Obj\system_stm32f4xx.o                             #
-#                    C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1.0\Projec #
-#                    t\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\usb_bsp. #
-#                    o C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1.0\Proj #
-#                    ect\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\usb_co #
-#                    re.o C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1.0\P #
-#                    roject\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\usb #
-#                    _dcd.o C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1.0 #
-#                    \Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\u #
-#                    sb_dcd_int.o C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_ #
-#                    V1.1.0\Project\Peripheral_Examples\SysTick\EWARM\SysTick #
-#                    \Obj\usbd_cdc_core.o C:\Users\RAMI\Desktop\STM32F4-Disco #
-#                    very_FW_V1.1.0\Project\Peripheral_Examples\SysTick\EWARM #
-#                    \SysTick\Obj\usbd_cdc_vcp.o                              #
-#                    C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1.0\Projec #
-#                    t\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\usbd_cor #
-#                    e.o C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1.0\Pr #
-#                    oject\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\usbd #
-#                    _desc.o C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1. #
-#                    0\Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\ #
-#                    usbd_ioreq.o C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_ #
-#                    V1.1.0\Project\Peripheral_Examples\SysTick\EWARM\SysTick #
-#                    \Obj\usbd_req.o C:\Users\RAMI\Desktop\STM32F4-Discovery_ #
-#                    FW_V1.1.0\Project\Peripheral_Examples\SysTick\EWARM\SysT #
-#                    ick\Obj\usbd_usr.o --redirect _Printf=_PrintfSmall       #
-#                    --redirect _Scanf=_ScanfSmall -o                         #
-#                    C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1.0\Projec #
-#                    t\Peripheral_Examples\SysTick\EWARM\SysTick\Exe\SysTick. #
-#                    out --map C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1. #
-#                    1.0\Project\Peripheral_Examples\SysTick\EWARM\SysTick\Li #
-#                    st\SysTick.map --config C:\Users\RAMI\Desktop\STM32F4-Di #
-#                    scovery_FW_V1.1.0\Project\Peripheral_Examples\SysTick\EW #
-#                    ARM\stm32f4xx_flash.icf --semihosting --entry            #
-#                    __iar_program_start --vfe                                #
+#    Output file  =  C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\ #
+#                    Project\Peripheral_Examples\SysTick\EWARM\SysTick\Exe\Sy #
+#                    sTick.out                                                #
+#    Map file     =  C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\ #
+#                    Project\Peripheral_Examples\SysTick\EWARM\SysTick\List\S #
+#                    ysTick.map                                               #
+#    Command line =  C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\ #
+#                    Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\BR #
+#                    IDGE_Config.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_ #
+#                    Bridge\Bridge\Project\Peripheral_Examples\SysTick\EWARM\ #
+#                    SysTick\Obj\BridgeCAN_Lib.o                              #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\ #
+#                    Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\Br #
+#                    idgeCOM_Lib.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_ #
+#                    Bridge\Bridge\Project\Peripheral_Examples\SysTick\EWARM\ #
+#                    SysTick\Obj\main.o C:\Users\RAMI\Documents\GitHub\USB_TO #
+#                    _CAN_Bridge\Bridge\Project\Peripheral_Examples\SysTick\E #
+#                    WARM\SysTick\Obj\misc.o C:\Users\RAMI\Documents\GitHub\U #
+#                    SB_TO_CAN_Bridge\Bridge\Project\Peripheral_Examples\SysT #
+#                    ick\EWARM\SysTick\Obj\startup_stm32f4xx.o                #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\ #
+#                    Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\st #
+#                    m32f4xx_can.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_ #
+#                    Bridge\Bridge\Project\Peripheral_Examples\SysTick\EWARM\ #
+#                    SysTick\Obj\stm32f4xx_exti.o                             #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\ #
+#                    Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\st #
+#                    m32f4xx_gpio.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN #
+#                    _Bridge\Bridge\Project\Peripheral_Examples\SysTick\EWARM #
+#                    \SysTick\Obj\stm32f4xx_it.o                              #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\ #
+#                    Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\st #
+#                    m32f4xx_rcc.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_ #
+#                    Bridge\Bridge\Project\Peripheral_Examples\SysTick\EWARM\ #
+#                    SysTick\Obj\stm32f4xx_usart.o                            #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\ #
+#                    Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\sy #
+#                    stem_stm32f4xx.o C:\Users\RAMI\Documents\GitHub\USB_TO_C #
+#                    AN_Bridge\Bridge\Project\Peripheral_Examples\SysTick\EWA #
+#                    RM\SysTick\Obj\usb_bsp.o C:\Users\RAMI\Documents\GitHub\ #
+#                    USB_TO_CAN_Bridge\Bridge\Project\Peripheral_Examples\Sys #
+#                    Tick\EWARM\SysTick\Obj\usb_core.o                        #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\ #
+#                    Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\us #
+#                    b_dcd.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge #
+#                    \Bridge\Project\Peripheral_Examples\SysTick\EWARM\SysTic #
+#                    k\Obj\usb_dcd_int.o C:\Users\RAMI\Documents\GitHub\USB_T #
+#                    O_CAN_Bridge\Bridge\Project\Peripheral_Examples\SysTick\ #
+#                    EWARM\SysTick\Obj\usbd_cdc_core.o                        #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\ #
+#                    Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\us #
+#                    bd_cdc_vcp.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_B #
+#                    ridge\Bridge\Project\Peripheral_Examples\SysTick\EWARM\S #
+#                    ysTick\Obj\usbd_core.o C:\Users\RAMI\Documents\GitHub\US #
+#                    B_TO_CAN_Bridge\Bridge\Project\Peripheral_Examples\SysTi #
+#                    ck\EWARM\SysTick\Obj\usbd_desc.o                         #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\ #
+#                    Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj\us #
+#                    bd_ioreq.o C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bri #
+#                    dge\Bridge\Project\Peripheral_Examples\SysTick\EWARM\Sys #
+#                    Tick\Obj\usbd_req.o C:\Users\RAMI\Documents\GitHub\USB_T #
+#                    O_CAN_Bridge\Bridge\Project\Peripheral_Examples\SysTick\ #
+#                    EWARM\SysTick\Obj\usbd_usr.o --redirect                  #
+#                    _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o    #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\ #
+#                    Project\Peripheral_Examples\SysTick\EWARM\SysTick\Exe\Sy #
+#                    sTick.out --map C:\Users\RAMI\Documents\GitHub\USB_TO_CA #
+#                    N_Bridge\Bridge\Project\Peripheral_Examples\SysTick\EWAR #
+#                    M\SysTick\List\SysTick.map --config                      #
+#                    C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\ #
+#                    Project\Peripheral_Examples\SysTick\EWARM\stm32f4xx_flas #
+#                    h.icf --semihosting --entry __iar_program_start --vfe    #
 #                                                                             #
 #                                                                             #
 ###############################################################################
@@ -277,7 +281,7 @@ Copy (__iar_copy_init3)
 
     Module                 ro code  ro data  rw data
     ------                 -------  -------  -------
-C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj: [1]
+C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj: [1]
     BRIDGE_Config.o            584
     BridgeCAN_Lib.o            408
     BridgeCOM_Lib.o            166                 4
@@ -586,7 +590,7 @@ usbd_cdc_SOF            0x080020d9   0x5c  Code  Lc  usbd_cdc_core.o [1]
 usbd_cdc_Setup          0x08001fb3   0xa8  Code  Lc  usbd_cdc_core.o [1]
 
 
-[1] = C:\Users\RAMI\Desktop\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj
+[1] = C:\Users\RAMI\Documents\GitHub\USB_TO_CAN_Bridge\Bridge\Project\Peripheral_Examples\SysTick\EWARM\SysTick\Obj
 [2] = command line
 [3] = dl7M_tln.a
 [4] = m7M_tlv.a

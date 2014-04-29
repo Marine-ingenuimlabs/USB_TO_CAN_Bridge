@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=1837300232
+Checksum=-1559120755
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -80,8 +80,9 @@ mode=0
 Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\BRIDGE_Config.c}.118.1" 0 0 1 "" 0 "" 0
 Bp1=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\usb_lib\cdc\usbd_cdc_vcp.c}.329.9" 0 0 1 "" 0 "" 0
 Bp2=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\usb_lib\cdc\usbd_cdc_vcp.c}.393.11" 0 0 1 "" 0 "" 0
-Bp3=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\BridgeCAN_Lib.c}.72.3" 0 0 1 "" 0 "" 0
-Count=4
+Bp3=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\stm32f4xx_it.c}.185.3" 0 0 1 "" 0 "" 0
+Bp4=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\stm32f4xx_it.c}.189.7" 0 0 1 "" 0 "" 0
+Count=5
 [Aliases]
 Count=0
 SuppressDialog=0
