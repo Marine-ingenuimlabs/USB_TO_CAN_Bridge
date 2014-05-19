@@ -11,7 +11,8 @@ union_struct mybyteconvertor;
 * Return         : None
 *******************************************************************************/
 void COM_SendMsg(Message * MsgToSend)
-{ uint8_t trame[13];
+{ GPIO_ToggleBits(GPIOD, GPIO_Pin_12);
+  uint8_t trame[13];
   trame[0]=0xFF-(MsgToSend->Mode);
   trame[1]= MsgToSend->Id;
   trame[2]=MsgToSend->Length;               

@@ -41,8 +41,8 @@ void CAN_Config()
 
 
   NVIC_InitStructure.NVIC_IRQChannel = CAN1_RX0_IRQn; //Use CAN2 in case of just sending informations from CAN1 to CAN2 on the same board
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x0;
-  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x0;
+  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0x00;
+  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0x00;
   NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&NVIC_InitStructure); 
 
@@ -66,9 +66,9 @@ void CAN_Config()
   CAN_InitStructure.CAN_SJW = CAN_SJW_1tq;
     
   //CAN Baudrate = 125 KBps// (APB1 clocked at 42 Mhz = CANclock) 
-  CAN_InitStructure.CAN_BS1 = CAN_BS1_8tq;
+  CAN_InitStructure.CAN_BS1 = CAN_BS1_9tq;
   CAN_InitStructure.CAN_BS2 = CAN_BS2_6tq;
-  CAN_InitStructure.CAN_Prescaler = 42;
+  CAN_InitStructure.CAN_Prescaler = 21;
   CAN_Init(CAN1, &CAN_InitStructure); 
   CAN_Init(CAN2, &CAN_InitStructure); 
 
@@ -147,7 +147,7 @@ uint8_t CAN_SaveMsg(CanRxMsg * src, Message * dst)
 *******************************************************************************/
 void CAN_SendMsg(Message* MsgToSend)
 { 
- 
+  GPIO_ToggleBits(GPIOD, GPIO_Pin_15);
   if(MsgToSend->Mode==STRM_MODE)
   {
     Bridge.TxMessage1.IDE=CAN_ID_EXT;

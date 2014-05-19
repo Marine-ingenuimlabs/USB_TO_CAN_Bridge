@@ -44,13 +44,15 @@ static const uint16_t  CRC_TABLE[256] ={
 *******************************************************************************/
 uint8_t ChangeState_level_Freer(uint8_t State)
 { 
-  if (State== COM_IDLE || State== CAN_IDLE)
+  if (State!= COM_IDLE && State!= CAN_IDLE)
+  {
     //printf("The state is going out of range (down): %d", State);
   if(State == CAN_MSGINQUEUE || State == CAN_PROC_MSGINQUEUE || State == COM_MSGINQUEUE || State == COM_PROC_MSGINQUEUE )
     {
     State--;
     }
     State--;
+  }
   return State;
 }
 /*******************************************************************************
@@ -62,11 +64,11 @@ uint8_t ChangeState_level_Freer(uint8_t State)
 * Return         : None
 *******************************************************************************/
 uint8_t ChangeState_level_Busier(uint8_t State)
-{ if (State== CAN_PROC_MSGINQUEUE || State== COM_PROC_MSGINQUEUE)
+{ if (State!= CAN_PROC_MSGINQUEUE && State!= COM_PROC_MSGINQUEUE)
     {
     //printf("The state is going out of range (up): %d", State);
-    }
   State++;
+   }
   return State;
 
 }

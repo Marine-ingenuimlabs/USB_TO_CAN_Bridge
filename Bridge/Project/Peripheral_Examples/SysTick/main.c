@@ -52,10 +52,11 @@ void main(void)
 	            &USR_cb);
         
         /* Setup SysTick or CROD! */
-	if (SysTick_Config(SystemCoreClock / 10000))
+	if (SysTick_Config(SystemCoreClock /20000))
 	{
 		ColorfulRingOfDeath();
 	}
+        
         /*Variables Initialization*/
         Bridge_Init(&Bridge);
         CANpacket_receive=0;
@@ -63,36 +64,15 @@ void main(void)
 
 	/* LED initialisation */
 	LED_Config();
-
+        /*
+        GPIO_ToggleBits(GPIOD, GPIO_Pin_12);//led3 orange
+        GPIO_ToggleBits(GPIOD, GPIO_Pin_13);//led4 
+        GPIO_ToggleBits(GPIOD, GPIO_Pin_14);//led 5 rouge
+        GPIO_ToggleBits(GPIOD, GPIO_Pin_15);//led 6 blue
+        */
 	while (1)
 	{
-		/* Blink the orange LED at 10Hz */
-		if (500 == ticker)
-		{
-			GPIO_SetBits(GPIOD, GPIO_Pin_13);
-		}
-		else if (1000 == ticker)
-		{
-			ticker = 0;
-			GPIO_ResetBits(GPIOD,GPIO_Pin_13);
-		}
-
-		/* If there's data on the virtual serial port:
-		 *  - Echo it back
-		 *  - Turn the green LED on for 1ms
-		 */
-		//uint8_t theByte;
-		/*if (VCP_get_char(&theByte))
-		{
-			VCP_put_char(theByte);
-			GPIO_SetBits(GPIOD, GPIO_Pin_12);
-			downTicker = 10;
-		}
-		if (0 == downTicker)
-		{
-			
-                        GPIO_ResetBits(GPIOD, GPIO_Pin_12);
-		}*/
+		
 	}
 
 }

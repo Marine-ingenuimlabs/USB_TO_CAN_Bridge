@@ -47,7 +47,7 @@
     extern COM_struct Bridge;
     extern uint32_t CANpacket_sent;
     extern uint32_t CANpacket_receive; 
-    uint16_t CANTX_Counter=0;
+    uint32_t CANTX_Counter=0;
     uint8_t CAN_mbox;
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
@@ -94,10 +94,9 @@ void SysTick_Handler(void)
       /********************************************************************************
       ********************* Message received from USB port (pc) ***********************
       *********************************************************************************/
-        if( Bridge.COM_Status==COM_ReadyToProcess)
-        {
+       
         
-          if(Bridge.COM_State == COM_PROCESSING)
+          if(Bridge.COM_State == COM_PROCESSING &&   Bridge.COM_Status==COM_ReadyToProcess)
           {
             COM_SaveMsg(&Bridge.Reception_Buffer,&Bridge.COM_Lastmessage.CDC_FromPC_Buffer);
             Bridge.COM_State=ChangeState_level_Busier(Bridge.COM_State);
@@ -109,19 +108,29 @@ void SysTick_Handler(void)
               // make the function to send CAN messages through serial          
               CAN_SendMsg(&Bridge.COM_Lastmessage.CDC_FromPC_Buffer);
               CAN_mbox=CAN_Transmit(CAN1,&Bridge.TxMessage1);
-              while(((Bridge.CAN_Err.ErrorData=CAN_TransmitStatus(CAN1, CAN_mbox))  !=  CAN_TxStatus_Ok) && (CANTX_Counter !=  0xFFFF))
+              while(((Bridge.CAN_Err.ErrorData=CAN_TransmitStatus(CAN1, CAN_mbox))  !=  CAN_TxStatus_Ok) && (CANTX_Counter !=  0x1FFFFFF))
               {
                 CANTX_Counter++;
+                GPIO_ToggleBits(GPIOD, GPIO_Pin_14);
               }
-              if(CANTX_Counter!=0xFFFF)
-              {
-                if (Bridge.COM_State == COM_PROC_MSGINQUEUE)
+              
+              if(CANTX_Counter < 0x1FFFFFF)
+              { GPIO_ToggleBits(GPIOD, GPIO_Pin_14);
+                Bridge.COM_State=ChangeState_level_Freer(Bridge.COM_State);
+                if (Bridge.COM_State == COM_PROCESSING &&   Bridge.COM_Status==COM_ReadyToProcess)
+                { 
+                  
                     COM_SaveMsg(&Bridge.Reception_Buffer,&Bridge.COM_Lastmessage.CDC_FromPC_Buffer);
-                  Bridge.COM_State=ChangeState_level_Freer(Bridge.COM_State);
+                    Bridge.COM_State=ChangeState_level_Busier(Bridge.COM_State);
+                    Bridge.COM_Status=COM_WaitingforHeader; 
+                }
+                  
               }
-               else
+              else{
                   Bridge.CAN_Err.ErrorId=CAN_SENDERROR;
-            }               
+                  GPIO_ToggleBits(GPIOD, GPIO_Pin_13);
+              }
+                         
       }
 
      
@@ -159,15 +168,30 @@ void SysTick_Handler(void)
        else
        {
          Bridge.COM_Acknowledgement.Nb_Tries++;
+         if (Bridge.COM_Acknowledgement.Nb_Tries==1000)
+         {
+         Bridge.COM_Acknowledgement.State=ACK_IDLE;
+         Bridge.COM_Acknowledgement.Nb_Tries=0;
+         }
+         if((Bridge.COM_Acknowledgement.Nb_Tries%500)==0 ){
          COM_SendMsg(&Bridge.COM_Lastmessage.CDC_ToPC_Buffer);
          Bridge.COM_Acknowledgement.State=ACK_WAITING;
+         }
        }
     }   
      else if(Bridge.COM_Acknowledgement.State==ACK_WAITING)
      {
        Bridge.COM_Acknowledgement.Nb_Check++;
-       //STM_EVAL_LEDToggle(LED6);
+       if(Bridge.COM_Acknowledgement.Nb_Check==1000)
+       {
+         Bridge.CAN_State=ChangeState_level_Freer(Bridge.CAN_State);
+         Bridge.COM_Acknowledgement.State=ACK_IDLE;
+         Bridge.COM_Acknowledgement.Nb_Check=0;
+         
+       }
+       if((Bridge.COM_Acknowledgement.Nb_Check %500) == 0){
        COM_SendMsg(&Bridge.COM_Lastmessage.CDC_ToPC_Buffer);
+       }
      }
   
   //STM_EVAL_LEDOff(LED7);
@@ -186,6 +210,7 @@ void CAN1_RX0_IRQHandler(void)
   {
    // if(Bridge.CAN_State!= CAN_PROC_MSGINQUEUE && Bridge.CAN_State!= CAN_PROCESSING )
    //{
+      GPIO_ToggleBits(GPIOD, GPIO_Pin_14);
       CAN_Receive(CAN1, CAN_FIFO0, &Bridge.RxMessage1);
       CANpacket_receive=1; 
       Bridge.CAN_State=ChangeState_level_Busier(Bridge.CAN_State);

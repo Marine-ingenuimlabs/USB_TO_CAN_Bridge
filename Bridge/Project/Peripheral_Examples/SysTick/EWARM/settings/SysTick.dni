@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-1559120755
+Checksum=-1596077943
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -34,9 +34,10 @@ ITMportsEnable=0
 ITMportsTermIO=0
 ITMportsLogFile=0
 ITMlogFile=$PROJ_DIR$\ITM.log
-[Trace2]
-Enabled=0
-ShowSource=0
+[struct_types]
+Fmt0=COM_struct-COM_Status	4	0
+Fmt1=COM_struct-crc	4	0
+Fmt2=COM_struct-crc_pc	4	0
 [SWOTraceWindow]
 PcSampling=0
 InterruptLogs=0
@@ -78,11 +79,8 @@ Exclusions=
 mode=0
 [Breakpoints2]
 Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\BRIDGE_Config.c}.118.1" 0 0 1 "" 0 "" 0
-Bp1=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\usb_lib\cdc\usbd_cdc_vcp.c}.329.9" 0 0 1 "" 0 "" 0
-Bp2=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\usb_lib\cdc\usbd_cdc_vcp.c}.393.11" 0 0 1 "" 0 "" 0
-Bp3=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\stm32f4xx_it.c}.185.3" 0 0 1 "" 0 "" 0
-Bp4=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\stm32f4xx_it.c}.189.7" 0 0 1 "" 0 "" 0
-Count=5
+Count=1
 [Aliases]
-Count=0
+A0=_ "C:\Users\Hadjrami\Desktop\Bridge\Project\Peripheral_Examples\SysTick\main.c" "C:\Users\TOUCHI\Desktop\Bridge\Project\Peripheral_Examples\SysTick\main.c"
+Count=1
 SuppressDialog=0

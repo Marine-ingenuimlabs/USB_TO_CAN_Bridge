@@ -292,17 +292,15 @@ void EVAL_COM_IRQHandler(void) {
 uint32_t CDC_Receive_DATA(uint8_t Received_Char)
 { 
   /*Receive flag*/
+  if(Bridge.COM_Status!=COM_ReadyToProcess){
   switch (Bridge.COM_Status)
   { 
     /*Header reception*/  
     case COM_WaitingforHeader:
       if(Received_Char==RQST_HHEADER || Received_Char==CMD_HHEADER)
       { 
-        GPIO_SetBits(GPIOD, GPIO_Pin_12);
-        //Bridge.COM_State++;
-        //printf("%d",Bridge.COM_State);
+        GPIO_SetBits(GPIOD, GPIO_Pin_13);
         Bridge.COM_State=ChangeState_level_Busier(Bridge.COM_State);
-        //printf("%d",Bridge.COM_State);
         Bridge.Reception_Buffer.Mode= 0xFF-Received_Char;
         Bridge.COM_Status=COM_WaitingforID;
         //Bridge.New_Message=1;
@@ -314,6 +312,7 @@ uint32_t CDC_Receive_DATA(uint8_t Received_Char)
       else if (Received_Char == SPCL_HHEADER && Bridge.COM_Acknowledgement.State==ACK_WAITING )
       {        
        Bridge.COM_Status=COM_WaitingforSPCL; 
+       Receive_Counter=0;
       }
       else 
       {
@@ -324,10 +323,18 @@ uint32_t CDC_Receive_DATA(uint8_t Received_Char)
       
     /* Special Message reception*/ 
     case COM_WaitingforSPCL:
-     Bridge.COM_Acknowledgement.COM_ACK = Received_Char;
+      Receive_Counter++;
+      if(Receive_Counter==1){
+        if(Received_Char!=ACK_MESSAGE[0])
+        {
+          Bridge.COM_Status=COM_WaitingforID;  
+        }
+      }else{  
+        Bridge.COM_Acknowledgement.COM_ACK = Received_Char;
         Bridge.COM_Acknowledgement.State = ACK_RECEIVED;
         Bridge.COM_Status=COM_WaitingforHeader;
         Bridge.COM_State=ChangeState_level_Freer(Bridge.COM_State); 
+      }
         break;
         
     /*Message Identifier reception*/
@@ -340,13 +347,20 @@ uint32_t CDC_Receive_DATA(uint8_t Received_Char)
     /*Data length integer */
     case COM_WaitingforLength:
       if(Received_Char <=8)
-      {
+      {   if (Received_Char == 0 && (Bridge.Reception_Buffer.Mode==0xFF-RQST_HHEADER))
+          {
+             Bridge.COM_Status=COM_WaitingforCRC;
+          }
+      else{
+    
           Bridge.Reception_Buffer.Length=Received_Char;
           Bridge.COM_Status=COM_WaitingforData;
           Bridge.crc = crc16(Bridge.crc,Received_Char);
+            }
       }
       else {
         Bridge.COM_Status=COM_WaitingforHeader;
+        COM_SendSpecial((unsigned char *)&NACK_MESSAGE);
         Bridge.COM_Err.ErrorId=COM_ERRLENGTH;
         Bridge.COM_State=ChangeState_level_Freer(Bridge.COM_State); 
       }
@@ -398,6 +412,8 @@ uint32_t CDC_Receive_DATA(uint8_t Received_Char)
   default:
     break;
   }
+  }
+  
   return 1 ;
 }
 /*******************************************************************************

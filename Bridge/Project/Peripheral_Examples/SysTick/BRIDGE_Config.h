@@ -53,8 +53,8 @@ typedef struct
 typedef struct 
 { 
   uint8_t COM_ACK;
-  uint8_t Nb_Check; //
-  uint8_t Nb_Tries; //The sending repetetion number without reception of a valid ACK
+  uint16_t Nb_Check; //
+  uint16_t Nb_Tries; //The sending repetetion number without reception of a valid ACK
   uint8_t State;// Idle / received /waiting
 }ACK_struct;
 typedef struct 
