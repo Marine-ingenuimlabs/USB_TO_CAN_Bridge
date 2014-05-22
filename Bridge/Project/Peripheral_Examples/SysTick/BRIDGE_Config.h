@@ -179,11 +179,11 @@ typedef union
 /**/
 
 static const uint8_t ERR_MESSAGE[2]  ={
-  0xFD};
+  0xFF};
 static const uint8_t NACK_MESSAGE[2] ={
-  0xFD, 0x02};
+  0xFF, 0x02};
 static const uint8_t ACK_MESSAGE[2]  ={
-  0xFD, 0x01};
+  0xFF, 0x01};
 
 static const uint16_t  CRC_TABLE[256];
 

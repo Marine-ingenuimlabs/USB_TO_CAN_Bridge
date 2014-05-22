@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-1596077943
+Checksum=1395043554
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -38,6 +38,9 @@ ITMlogFile=$PROJ_DIR$\ITM.log
 Fmt0=COM_struct-COM_Status	4	0
 Fmt1=COM_struct-crc	4	0
 Fmt2=COM_struct-crc_pc	4	0
+[Trace2]
+Enabled=0
+ShowSource=0
 [SWOTraceWindow]
 PcSampling=0
 InterruptLogs=0
@@ -60,6 +63,12 @@ GraphEnabled=0
 ShowTimeLog=1
 ShowTimeSum=1
 SumSortOrder=0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\BRIDGE_Config.c}.118.1" 0 0 1 "" 0 "" 0
+Bp1=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\usb_lib\cdc\usbd_cdc_vcp.c}.407.11" 0 0 1 "" 0 "" 0
+Count=2
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -67,6 +76,10 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
+[Aliases]
+A0=_ "C:\Users\Hadjrami\Desktop\Bridge\Project\Peripheral_Examples\SysTick\main.c" "C:\Users\TOUCHI\Desktop\Bridge\Project\Peripheral_Examples\SysTick\main.c"
+Count=1
+SuppressDialog=0
 [CallStackLog]
 Enabled=0
 [DriverProfiling]
@@ -75,12 +88,3 @@ Mode=3
 Graph=0
 Symbiont=0
 Exclusions=
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\BRIDGE_Config.c}.118.1" 0 0 1 "" 0 "" 0
-Count=1
-[Aliases]
-A0=_ "C:\Users\Hadjrami\Desktop\Bridge\Project\Peripheral_Examples\SysTick\main.c" "C:\Users\TOUCHI\Desktop\Bridge\Project\Peripheral_Examples\SysTick\main.c"
-Count=1
-SuppressDialog=0

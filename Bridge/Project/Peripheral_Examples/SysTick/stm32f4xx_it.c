@@ -168,30 +168,30 @@ void SysTick_Handler(void)
        else
        {
          Bridge.COM_Acknowledgement.Nb_Tries++;
-         if (Bridge.COM_Acknowledgement.Nb_Tries==1000)
+         if (Bridge.COM_Acknowledgement.Nb_Tries==4)
          {
-         Bridge.COM_Acknowledgement.State=ACK_IDLE;
-         Bridge.COM_Acknowledgement.Nb_Tries=0;
+           Bridge.COM_Acknowledgement.State=ACK_IDLE;
+           Bridge.COM_Acknowledgement.Nb_Tries=0;
          }
-         if((Bridge.COM_Acknowledgement.Nb_Tries%500)==0 ){
-         COM_SendMsg(&Bridge.COM_Lastmessage.CDC_ToPC_Buffer);
-         Bridge.COM_Acknowledgement.State=ACK_WAITING;
+         if((Bridge.COM_Acknowledgement.Nb_Tries%2)==0 ){
+           COM_SendMsg(&Bridge.COM_Lastmessage.CDC_ToPC_Buffer);
+           Bridge.COM_Acknowledgement.State=ACK_WAITING;
          }
        }
     }   
      else if(Bridge.COM_Acknowledgement.State==ACK_WAITING)
      {
        Bridge.COM_Acknowledgement.Nb_Check++;
-       if(Bridge.COM_Acknowledgement.Nb_Check==1000)
+       if(Bridge.COM_Acknowledgement.Nb_Check==4)
        {
          Bridge.CAN_State=ChangeState_level_Freer(Bridge.CAN_State);
          Bridge.COM_Acknowledgement.State=ACK_IDLE;
          Bridge.COM_Acknowledgement.Nb_Check=0;
          
        }
-       if((Bridge.COM_Acknowledgement.Nb_Check %500) == 0){
+       /*if((Bridge.COM_Acknowledgement.Nb_Check %2) == 0){
        COM_SendMsg(&Bridge.COM_Lastmessage.CDC_ToPC_Buffer);
-       }
+       }*/
      }
   
   //STM_EVAL_LEDOff(LED7);
