@@ -6,20 +6,20 @@
       <Debug-Log>
         
         
-      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1541</ColumnWidth1></Debug-Log>
+      <PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Build</Factory></Window><Window><Factory>Find-All-References</Factory></Window><Window><Factory>WATCH_1</Factory></Window><Window><Factory>QuickWatch</Factory></Window><Window><Factory>Find-in-Files</Factory></Window></Windows></PreferedWindows><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1541</ColumnWidth1></Debug-Log>
       <Build>
         
         
         
         
-      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1155</ColumnWidth1><ColumnWidth2>308</ColumnWidth2><ColumnWidth3>77</ColumnWidth3></Build>
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1155</ColumnWidth1><ColumnWidth2>308</ColumnWidth2><ColumnWidth3>77</ColumnWidth3><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Debug-Log</Factory></Window><Window><Factory>Find-All-References</Factory></Window><Window><Factory>WATCH_1</Factory></Window><Window><Factory>QuickWatch</Factory></Window><Window><Factory>Find-in-Files</Factory></Window></Windows></PreferedWindows></Build>
       <Workspace>
         <ColumnWidths>
           
           
           
           
-        <Column0>153</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+        <Column0>217</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
       </Workspace>
       <Disassembly>
         <col-names>
@@ -44,12 +44,12 @@
         
         
         
-      <ColumnWidth0>552</ColumnWidth0><ColumnWidth1>78</ColumnWidth1><ColumnWidth2>946</ColumnWidth2></Find-All-References>
-    <WATCH_1><expressions><item>theByte</item><item>APP_tx_ptr_tail</item><item>APP_tx_ptr_head</item><item>Bridge</item><item>APP_Tx_Buffer</item><item>*(Buf + i)</item><item>APP_Tx_Buffer[APP_tx_ptr_head]</item><item>APP_tx_ptr_head</item><item>Bridge.crc</item><item>Bridge.crc_pc</item><item>Bridge.crc</item><item>APP_Rx_Buffer</item><item>APP_Rx_ptr_in</item><item>SPCL_HHEADER</item><item>SPCL_HHEADER</item><item>Buf</item><item>Bridge</item><item>Bridge.RxMessage1</item><item>Bridge</item><item>Bridge.COM_Acknowledgement.Nb_Check</item><item>Received_Char</item><item>APP_Tx_Buffer</item><item>APP_Tx_Buffer</item><item/></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>309</item><item>150</item><item>100</item><item>112</item></col-widths></WATCH_1><QuickWatch><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>100</item><item>150</item><item>100</item><item>100</item></col-widths><QWatchHistory><item>Bridge.COM_State</item></QWatchHistory></QuickWatch></Static>
+      <ColumnWidth0>552</ColumnWidth0><ColumnWidth1>78</ColumnWidth1><ColumnWidth2>946</ColumnWidth2><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Debug-Log</Factory></Window><Window><Factory>Build</Factory></Window><Window><Factory>WATCH_1</Factory></Window><Window><Factory>QuickWatch</Factory></Window><Window><Factory>Find-in-Files</Factory></Window></Windows></PreferedWindows></Find-All-References>
+    <WATCH_1><expressions><item>Bridge</item><item>APP_Tx_Buffer</item><item>APP_tx_ptr_head</item><item>APP_tx_ptr_tail</item><item></item></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>309</item><item>150</item><item>100</item><item>112</item></col-widths><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Debug-Log</Factory></Window><Window><Factory>Build</Factory></Window><Window><Factory>Find-All-References</Factory></Window><Window><Factory>QuickWatch</Factory></Window><Window><Factory>Find-in-Files</Factory></Window></Windows></PreferedWindows></WATCH_1><QuickWatch><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>100</item><item>150</item><item>100</item><item>100</item></col-widths><QWatchHistory><item>Bridge.COM_State</item></QWatchHistory><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Debug-Log</Factory></Window><Window><Factory>Build</Factory></Window><Window><Factory>Find-All-References</Factory></Window><Window><Factory>WATCH_1</Factory></Window><Window><Factory>Find-in-Files</Factory></Window></Windows></PreferedWindows></QuickWatch><Find-in-Files><ColumnWidth0>127</ColumnWidth0><ColumnWidth1>21</ColumnWidth1><ColumnWidth2>191</ColumnWidth2><ColumnWidth3>85</ColumnWidth3><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows><Window><Factory>Debug-Log</Factory></Window><Window><Factory>Build</Factory></Window><Window><Factory>Find-All-References</Factory></Window><Window><Factory>WATCH_1</Factory></Window><Window><Factory>QuickWatch</Factory></Window></Windows></PreferedWindows></Find-in-Files><Extra-Trace><col-names><item>Comment</item><item>Cycles</item><item>Event</item><item>Index</item><item>SWO Packet</item><item>Trace</item><item>Value</item></col-names><col-widths><item>400</item><item>100</item><item>200</item><item>70</item><item>100</item><item>300</item><item>100</item></col-widths></Extra-Trace><TerminalIO><InputSource>1</InputSource><InputMode>10</InputMode><Filename>$PROJ_DIR$\TermIOInput.txt</Filename><InputEcho>1</InputEcho><ShowReset>0</ShowReset></TerminalIO></Static>
     <Windows>
       
       
-    <Wnd1>
+    <Wnd4>
         <Tabs>
           <Tab>
             <Identity>TabID-23285-7897</Identity>
@@ -61,35 +61,20 @@
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd1><Wnd3><Tabs><Tab>
-            <Identity>TabID-12537-7893</Identity>
-            <TabName>Debug Log</TabName>
-            <Factory>Debug-Log</Factory>
-            <Session/>
-          </Tab><Tab>
-            <Identity>TabID-12014-7903</Identity>
-            <TabName>Build</TabName>
-            <Factory>Build</Factory>
-            <Session/>
-          </Tab><Tab>
-            <Identity>TabID-14254-25874</Identity>
-            <TabName>References</TabName>
-            <Factory>Find-All-References</Factory>
-            <Session/>
-          </Tab><Tab><Identity>TabID-13257-32761</Identity><TabName>Watch 1</TabName><Factory>WATCH_1</Factory></Tab><Tab><Identity>TabID-1713-30937</Identity><TabName>Quick Watch</TabName><Factory>QuickWatch</Factory></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd3></Windows>
+      <SelectedTab>0</SelectedTab></Wnd4><Wnd5><Tabs><Tab><Identity>TabID-1365-24050</Identity><TabName>SWO Trace</TabName><Factory>Extra-Trace</Factory></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd5><Wnd6><Tabs><Tab><Identity>TabID-10022-24092</Identity><TabName>Terminal I/O</TabName><Factory>TerminalIO</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd6><Wnd7><Tabs><Tab><Identity>TabID-27002-25412</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd7></Windows>
     <Editor>
       
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BridgeCOM_Lib.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>2</YPos2><SelStart2>486</SelStart2><SelEnd2>486</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BridgeCAN_Lib.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>30</YPos2><SelStart2>1518</SelStart2><SelEnd2>1518</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\stm32f4xx_it.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>177</YPos2><SelStart2>8281</SelStart2><SelEnd2>8281</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\usb_lib\cdc\usbd_cdc_vcp.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>389</YPos2><SelStart2>12076</SelStart2><SelEnd2>12076</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BRIDGE_Config.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>24</YPos2><SelStart2>1782</SelStart2><SelEnd2>1782</SelEnd2></Tab><ActiveTab>5</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BRIDGE_Config.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>171</YPos2><SelStart2>6313</SelStart2><SelEnd2>6313</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BridgeCOM_Lib.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>12</YPos2><SelStart2>479</SelStart2><SelEnd2>479</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BridgeCAN_Lib.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>129</YPos2><SelStart2>5042</SelStart2><SelEnd2>5042</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BRIDGE_Config.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>10</SelStart2><SelEnd2>23</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\stm32f4xx_it.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>255</YPos2><SelStart2>6043</SelStart2><SelEnd2>6043</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\BRIDGE_Config.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>112</YPos2><SelStart2>3728</SelStart2><SelEnd2>3748</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\cmsis_lib\source\stm32f4xx_gpio.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>363</YPos2><SelStart2>13634</SelStart2><SelEnd2>13646</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\usb_lib\core\usbd_core.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>152</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\usb_lib\cdc\usbd_cdc_core.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>660</YPos2><SelStart2>21595</SelStart2><SelEnd2>21595</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\usb_lib\cdc\usbd_cdc_vcp.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>192</YPos2><SelStart2>6029</SelStart2><SelEnd2>6029</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\usb_conf\usbd_conf.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>40</YPos2><SelStart2>2628</SelStart2><SelEnd2>2636</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>38</YPos2><SelStart2>1782</SelStart2><SelEnd2>1782</SelEnd2></Tab><ActiveTab>10</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-026C06A8><key>iaridepm.enu1</key></Toolbar-026C06A8></Sizes></Row0><Row1><Sizes><Toolbar-08C57D68><key>debuggergui.enu1</key></Toolbar-08C57D68></Sizes></Row1><Row2><Sizes><Toolbar-08C55BD0><key>armstlink.enu1</key></Toolbar-08C55BD0></Sizes></Row2></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>593</Bottom><Right>227</Right><x>-2</x><y>-2</y><xscreen>145</xscreen><yscreen>168</yscreen><sizeHorzCX>106149</sizeHorzCX><sizeHorzCY>244898</sizeHorzCY><sizeVertCX>167643</sizeVertCX><sizeVertCY>867347</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>593</Bottom><Right>437</Right><x>-2</x><y>-2</y><xscreen>108</xscreen><yscreen>117</yscreen><sizeHorzCX>79063</sizeHorzCX><sizeHorzCY>170554</sizeHorzCY><sizeVertCX>321376</sizeVertCX><sizeVertCY>867347</sizeVertCY></Rect></Wnd3></Sizes></Row0></Right><Bottom><Row0><Sizes/></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-00DC2990><key>iaridepm.enu1</key></Toolbar-00DC2990></Sizes></Row0><Row1><Sizes><Toolbar-0E58AFC0><key>debuggergui.enu1</key></Toolbar-0E58AFC0></Sizes></Row1><Row2><Sizes><Toolbar-0E5794F0><key>armstlink.enu1</key></Toolbar-0E5794F0></Sizes></Row2></Top><Left><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>395</Bottom><Right>308</Right><x>-2</x><y>-2</y><xscreen>145</xscreen><yscreen>168</yscreen><sizeHorzCX>106149</sizeHorzCX><sizeHorzCY>244898</sizeHorzCY><sizeVertCX>226940</sizeVertCX><sizeVertCY>578717</sizeVertCY></Rect></Wnd4></Sizes></Row0></Left><Right><Row0><Sizes><Wnd6><Rect><Top>-2</Top><Left>-2</Left><Bottom>395</Bottom><Right>355</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>146413</sizeHorzCX><sizeHorzCY>291545</sizeHorzCY><sizeVertCX>261347</sizeVertCX><sizeVertCY>578717</sizeVertCY></Rect></Wnd6></Sizes></Row0><Row1><Sizes><Wnd7><Rect><Top>-2</Top><Left>353</Left><Bottom>395</Bottom><Right>553</Right><x>353</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>146413</sizeHorzCX><sizeHorzCY>291545</sizeHorzCY><sizeVertCX>146413</sizeVertCX><sizeVertCY>578717</sizeVertCY></Rect></Wnd7></Sizes></Row1></Right><Bottom><Row0><Sizes><Wnd5><Rect><Top>-2</Top><Left>-2</Left><Bottom>198</Bottom><Right>1368</Right><x>-2</x><y>-2</y><xscreen>1370</xscreen><yscreen>200</yscreen><sizeHorzCX>1002928</sizeHorzCX><sizeHorzCY>291545</sizeHorzCY><sizeVertCX>146413</sizeVertCX><sizeVertCY>291545</sizeVertCY></Rect></Wnd5></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Project>
 

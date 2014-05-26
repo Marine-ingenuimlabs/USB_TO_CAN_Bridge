@@ -64,12 +64,12 @@ void main(void)
 
 	/* LED initialisation */
 	LED_Config();
-        /*
-        GPIO_ToggleBits(GPIOD, GPIO_Pin_12);//led3 orange
-        GPIO_ToggleBits(GPIOD, GPIO_Pin_13);//led4 
-        GPIO_ToggleBits(GPIOD, GPIO_Pin_14);//led 5 rouge
-        GPIO_ToggleBits(GPIOD, GPIO_Pin_15);//led 6 blue
-        */
+        
+        GPIO_SetBits(GPIOD, GPIO_Pin_12);//led3 orange
+        GPIO_SetBits(GPIOD, GPIO_Pin_13);//led4 
+        GPIO_SetBits(GPIOD, GPIO_Pin_14);//led 5 rouge
+        GPIO_SetBits(GPIOD, GPIO_Pin_15);//led 6 blue
+        
 	while (1)
 	{
 		

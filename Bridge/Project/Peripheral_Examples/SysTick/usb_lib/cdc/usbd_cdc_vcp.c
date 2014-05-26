@@ -202,17 +202,18 @@ static uint16_t VCP_DataTx(uint8_t* Buf, uint32_t Len) {
  * @retval Result of the opeartion: USBD_OK if all operations are OK else VCP_FAIL
  */
 
-#define APP_TX_BUF_SIZE 128
+#define APP_TX_BUF_SIZE 4096
 uint8_t APP_Tx_Buffer[APP_TX_BUF_SIZE];
 uint32_t APP_tx_ptr_head;
 uint32_t APP_tx_ptr_tail;
 
 static uint16_t VCP_DataRx(uint8_t* Buf, uint32_t Len) {
 	uint32_t i;
-
+        APP_tx_ptr_tail=APP_tx_ptr_head + Len;
 	for (i = 0; i < Len; i++) {
 		APP_Tx_Buffer[APP_tx_ptr_head] = *(Buf + i);
                 CDC_Receive_DATA(APP_Tx_Buffer[APP_tx_ptr_head]);
+                //printf(" %d, %d \r\n",APP_tx_ptr_tail,APP_tx_ptr_head);
 		APP_tx_ptr_head++; 
 		if (APP_tx_ptr_head == APP_TX_BUF_SIZE)
 			APP_tx_ptr_head = 0;
@@ -313,11 +314,14 @@ uint32_t CDC_Receive_DATA(uint8_t Received_Char)
       {        
        Bridge.COM_Status=COM_WaitingforSPCL; 
        Receive_Counter=0;
+       Bridge.COM_State=ChangeState_level_Busier(Bridge.COM_State);
       }
       else 
       {
-        strcpy((char*)APP_Tx_Buffer,"");
+        //strcpy((char*)APP_Tx_Buffer,"");
         Bridge.COM_State=ChangeState_level_Freer(Bridge.COM_State);  
+        Bridge.COM_Status=COM_WaitingforHeader;
+        
       }
       break;
       
@@ -328,7 +332,12 @@ uint32_t CDC_Receive_DATA(uint8_t Received_Char)
         if(Received_Char!=ACK_MESSAGE[0])
         {
           Bridge.COM_Status=COM_WaitingforID;  
+        }else 
+        {
+          Bridge.COM_Status=COM_WaitingforHeader;
+          Bridge.COM_State=ChangeState_level_Freer(Bridge.COM_State);
         }
+          
       }else{  
         Bridge.COM_Acknowledgement.COM_ACK = Received_Char;
         Bridge.COM_Acknowledgement.State = ACK_RECEIVED;
@@ -404,7 +413,7 @@ uint32_t CDC_Receive_DATA(uint8_t Received_Char)
           //STM_EVAL_LEDToggle(LED4);
           COM_SendSpecial((unsigned char *)ACK_MESSAGE);
           Bridge.COM_Status=COM_ReadyToProcess;
-          GPIO_ResetBits(GPIOD, GPIO_Pin_12);
+          GPIO_ToggleBits(GPIOD, GPIO_Pin_14);
         }
       }  
     break;

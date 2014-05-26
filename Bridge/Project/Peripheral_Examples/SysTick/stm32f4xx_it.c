@@ -111,11 +111,11 @@ void SysTick_Handler(void)
               while(((Bridge.CAN_Err.ErrorData=CAN_TransmitStatus(CAN1, CAN_mbox))  !=  CAN_TxStatus_Ok) && (CANTX_Counter !=  0x1FFFFFF))
               {
                 CANTX_Counter++;
-                GPIO_ToggleBits(GPIOD, GPIO_Pin_14);
+                //GPIO_ToggleBits(GPIOD, GPIO_Pin_14);
               }
               
               if(CANTX_Counter < 0x1FFFFFF)
-              { GPIO_ToggleBits(GPIOD, GPIO_Pin_14);
+              { //GPIO_ToggleBits(GPIOD, GPIO_Pin_14);
                 Bridge.COM_State=ChangeState_level_Freer(Bridge.COM_State);
                 if (Bridge.COM_State == COM_PROCESSING &&   Bridge.COM_Status==COM_ReadyToProcess)
                 { 
@@ -128,7 +128,7 @@ void SysTick_Handler(void)
               }
               else{
                   Bridge.CAN_Err.ErrorId=CAN_SENDERROR;
-                  GPIO_ToggleBits(GPIOD, GPIO_Pin_13);
+                 // GPIO_ToggleBits(GPIOD, GPIO_Pin_13);
               }
                          
       }
@@ -210,7 +210,7 @@ void CAN1_RX0_IRQHandler(void)
   {
    // if(Bridge.CAN_State!= CAN_PROC_MSGINQUEUE && Bridge.CAN_State!= CAN_PROCESSING )
    //{
-      GPIO_ToggleBits(GPIOD, GPIO_Pin_14);
+      GPIO_ToggleBits(GPIOD, GPIO_Pin_13);
       CAN_Receive(CAN1, CAN_FIFO0, &Bridge.RxMessage1);
       CANpacket_receive=1; 
       Bridge.CAN_State=ChangeState_level_Busier(Bridge.CAN_State);
